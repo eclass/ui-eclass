@@ -5,6 +5,7 @@
   "dependencies": {
     "availity-reactstrap-validation": "^2.6.0",
     "bootstrap": "^4.3.1",
+    "classnames": "^2.2.6",
     "polished": "^3.4.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
