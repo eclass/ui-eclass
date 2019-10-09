@@ -9,6 +9,6 @@ storiesOf('InputText', module)
   .add('InputText', () => <InputText/>)
   .add('InputAutoFocus', () => <InputText autoFocus={true}/>)
   .add('InputDisable', () => <InputText disabled={true}/>)
-  .add('InputValid', () => <InputText/>)
-  .add('InputInvalid', () => <InputText/>)
+  .add('InputValidationPhone', () => <InputText type="phone" />)
+  .add('InputValidationName', () => <InputText type="email"/>)
 
