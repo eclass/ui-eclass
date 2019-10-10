@@ -25,7 +25,7 @@ input{
 .form-control:focus {
     color: #495057;
     background-color: #fff;
-    border-color: ${variables.setColors.deepSkyBlue};
+    border: solid 2px ${variables.setColors.deepSkyBlue};
     outline: 0;
     box-shadow: none
 }
@@ -47,16 +47,16 @@ input{
 }
 
 .borderGreen{
-    border: solid 1px ${variables.setColors.jadeGreen}
+    border: solid 2px ${variables.setColors.jadeGreen}
 }
 .borderGreen:focus{
-    border: solid 1px ${variables.setColors.jadeGreen}
+    border: solid 2px ${variables.setColors.jadeGreen}
 }
 .borderRed{
-    border: solid 1px ${variables.setColors.red};
+    border: solid 2px ${variables.setColors.red};
 }
 .borderRed:focus{
-    border: solid 1px ${variables.setColors.red};
+    border: solid 2px ${variables.setColors.red};
 }
 
 `
