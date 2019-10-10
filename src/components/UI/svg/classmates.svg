@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="50" viewBox="0 0 44 50">
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="20" cy="20" r="20" fill="#FFF" transform="translate(4 10)"/>
+        <g stroke="#60798E" stroke-width="2" transform="translate(12 7)">
+            <ellipse cx="7.5" cy="5.056" rx="5.132" ry="5.056"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.77 34.336L0 34.222V18.778c0-3.498 3.181-6.334 7.105-6.334h.79c2.96 0 5.499 1.615 6.566 3.91"/>
+        </g>
+        <g transform="translate(30 12)">
+            <ellipse cx="3.75" cy="3.889" fill="#0189FF" rx="3.75" ry="3.889"/>
+            <path stroke="#60798E" stroke-linecap="round" stroke-width="2" d="M.495 10.737a5.58 5.58 0 0 1 2.584-.626h.592c2.302 0 4.263 1.37 5.008 3.287"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 10 14)">
+            <ellipse cx="3.75" cy="3.929" fill="#0189FF" rx="3.75" ry="3.929"/>
+            <path stroke="#60798E" stroke-linecap="round" stroke-width="2" d="M.495 10.847a5.535 5.535 0 0 1 2.584-.633h.592C6.614 10.214 9 12.476 9 15.265V22"/>
+        </g>
+        <g fill="#0189FF" fill-rule="nonzero">
+            <path d="M41.18 30.001H24.82a.773.773 0 0 0-.819.818v16.362a.773.773 0 0 0 .818.818h16.362a.773.773 0 0 0 .818-.818V30.819a.773.773 0 0 0-.818-.818zm-2.454 13.907H27.274v-1.636h11.452v1.636zm0-4.09H27.274v-1.636h11.452v1.636zm0-4.09H27.274v-1.636h11.452v1.636z"/>
+        </g>
+    </g>
+</svg>
