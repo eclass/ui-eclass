@@ -30,50 +30,33 @@ input{
     box-shadow: none
 }
 
-.was-validated .form-control:invalid, .form-control.is-invalid{
-    background-image: none;
-    :focus{
-        border: solid 1px ${variables.setColors.red};
-    }
-}
-
-.feedback-check{
+.valid_feedback{
     color: ${variables.setColors.jadeGreen};
+    display: flex;
+    margin-top: 4px;
+    align-items: center;
+    font-size: 12px;
 }
 
-.feedback-error{
+.invalid_feedback{
     color: ${variables.setColors.red};
-}
-.was-validated .form-control:valid, .form-control.is-valid{
-    background-image: none;
-    :focus{
-        border: solid 1px green;
-    }
-}
-.border-check{
-    border: solid 1px ${variables.setColors.brownGreyTwo}
-}
-.border-error{
-    border: solid 1px red;
+    display: flex;
+    margin-top: 4px;
+    align-items: center;
+    font-size: 12px;
 }
 
-.Error__Icon{
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><circle cx="15" cy="15" r="10" /></svg>');
+.borderGreen{
+    border: solid 1px ${variables.setColors.jadeGreen}
 }
-.Error__Icon__hidden{
-    background-image: none;
+.borderGreen:focus{
+    border: solid 1px ${variables.setColors.jadeGreen}
 }
-
-
-.Error__Message {
-    width: 100%;
-    margin-top: 0.25rem;
-    font-size: 80%;
-    color: #dc3545;
-    }
-
-.Hidden__Message {
-    display: none !important;
+.borderRed{
+    border: solid 1px ${variables.setColors.red};
+}
+.borderRed:focus{
+    border: solid 1px ${variables.setColors.red};
 }
 
 `
