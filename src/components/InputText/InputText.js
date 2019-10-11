@@ -45,7 +45,7 @@ const InputText = ( {disabled, autoFocus, type, placeholder, label }) => {
 
     return (
         <Wrapper>
-            <Label for="exampleEmail"> {label}</Label>
+            <Label for="exampleEmail" className={classNames( disabled ? 'gray' : '')}> {label}</Label>
                 <Input 
                     value={valueInput}
                     onChange={(e) => { setValueInput(e.target.value) ;}}

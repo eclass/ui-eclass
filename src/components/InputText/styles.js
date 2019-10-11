@@ -5,6 +5,8 @@ import variables from '../variables'
 
 
 const Wrapper = styled.div`
+
+
 label{
     font-size: 14px;
     font-weight: bold;
@@ -12,14 +14,9 @@ label{
 input{
     height: 44px;
     width: 400px;
-    color: ${variables.setColors.brownGreyTwo}
     &[disabled] {
     cursor: no-drop;
     }
-}
-
-::placeholder{
-    color: ${variables.setColors.brownGreyTwo}
 }
 
 .form-control:focus {
@@ -29,6 +26,7 @@ input{
     outline: 0;
     box-shadow: none
 }
+
 
 .valid_feedback{
     color: ${variables.setColors.jadeGreen};
@@ -57,6 +55,9 @@ input{
 }
 .borderRed:focus{
     border: solid 2px ${variables.setColors.red};
+}
+.gray{
+    color: ${variables.setColors.brownGreyTwo}
 }
 
 `

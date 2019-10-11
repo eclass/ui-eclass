@@ -16,9 +16,11 @@ const StyledButton = styled.button`
   border-radius: 4px;
   color: ${props => buttonColor(props)};
   margin-right: 10px;
-  overflow: hidden;
   padding: 0;
   transition: all 0.25s;
+  line-height: normal;
+  font-size: xx-small;
+  ${props => buttonBorder(props)};
   
   &:hover {
     ${props => buttonActionColor('hover', props)}
@@ -57,7 +59,6 @@ const StyledButton = styled.button`
     ${props => buttonSize(props.size, props.text)}
     padding: ${({ text }) => (text ? '0 10px' : '0')};
     text-align: center;
-    ${props => buttonBorder(props)};
     border-radius: 4px;
   }
 `

@@ -95,4 +95,9 @@ const StyledWrap = styled.div`
   .rtr-ripple-entering {
     opacity: ${props => props.opacity};
   }
+  .rtr-root {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
 `
