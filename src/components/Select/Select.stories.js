@@ -1,9 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import  Select  from './Select';
+import regiones  from './countries'
 import { addParameters } from '@storybook/react';
 import { themes } from '@storybook/theming';
-import regiones  from './countries'
+
 
 // Option defaults.
 addParameters({

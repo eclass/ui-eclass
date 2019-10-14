@@ -3,6 +3,7 @@ import { Wrapper } from './styles'
 import { Input, Label } from 'reactstrap'
 import { Icon } from '../UI/Icons'
 import classNames from 'classnames'
+import PropTypes from 'prop-types'
 
 
 const InputText = ( {disabled, autoFocus, type, placeholder, label }) => {
@@ -45,8 +46,9 @@ const InputText = ( {disabled, autoFocus, type, placeholder, label }) => {
 
     return (
         <Wrapper>
-            <Label for="exampleEmail" className={classNames( disabled ? 'gray' : '')}> {label}</Label>
+            <Label for="Input Text" className={classNames( disabled ? 'gray' : '')}> {label}</Label>
                 <Input 
+                    aria-label="Campo de texto"
                     value={valueInput}
                     onChange={(e) => { setValueInput(e.target.value) ;}}
                     onKeyUp={(e) => { clearTimeout(timer) ; validateInput(type, e.target.value)}}
@@ -63,6 +65,22 @@ const InputText = ( {disabled, autoFocus, type, placeholder, label }) => {
         </Wrapper>
     )
 }
+
+// @Proptypes
+InputText.propTypes = {
+    disabled: PropTypes.bool,
+    autoFocus: PropTypes.bool,
+    placeholder: PropTypes.string,
+    label: PropTypes.string,
+}
+
+InputText.defaultProps = {
+    disabled: false,
+    autoFocus: false,
+    placeholder: "Placeholder",
+    label: "Etiqueta",
+}
+
 
 
 export default InputText

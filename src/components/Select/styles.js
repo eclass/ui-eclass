@@ -22,8 +22,6 @@ select {
     color: ${variables.setColors.veryLightPink};
 }
 
-
-
 select.form-control {
     font-family: 'Roboto', sans-serif;
     background-image: url(${stre});

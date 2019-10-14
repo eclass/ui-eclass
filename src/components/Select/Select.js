@@ -3,9 +3,7 @@ import { Wrapper } from './styles'
 import { Input, Label } from 'reactstrap'
 import { Icon } from '../UI/Icons'
 import classNames from 'classnames'
-
-
-
+import PropTypes from 'prop-types'
 
 
 const Select = ({ disabled, label, placeholder, data }) => {
@@ -48,5 +46,21 @@ const Select = ({ disabled, label, placeholder, data }) => {
         </Wrapper>
     )
 }
+
+// @Proptypes
+Select.propTypes = {
+    disabled:PropTypes.bool, 
+    data: PropTypes.array, 
+    placeholder: PropTypes.string,
+    label: PropTypes.string,
+}
+
+Select.defaultProps = {
+    disabled: false, 
+    data: null, 
+    placeholder: "Placeholder",
+    label: "Etiqueta",
+}
+
 
 export default Select

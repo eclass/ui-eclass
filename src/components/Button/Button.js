@@ -5,6 +5,7 @@ import variables from '../variables'
 import DelayLink from './DelayLink'
 import { darken, transparentize } from 'polished'
 import Tooltip from 'reactstrap/lib/Tooltip'
+import PropTypes from 'prop-types'
 
 
 
@@ -120,6 +121,24 @@ export default function Button ({
   }
 }
 
+
+// @Proptypes
+Button.propTypes = {
+  border: PropTypes.bool,
+  disabled: PropTypes.bool,
+  form: PropTypes.string,
+  icon: PropTypes.string,
+  link: PropTypes.string,
+  blank: PropTypes.bool,
+  onClick: PropTypes.func,
+  opacityPressed: PropTypes.number,
+  size: PropTypes.string,
+  state: PropTypes.string,
+  text: PropTypes.string,
+  tooltip: PropTypes.string,
+  type: PropTypes.string,
+  testid: PropTypes.string
+}
 
 Button.defaultProps = {
   state: 'ghost'
