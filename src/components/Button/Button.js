@@ -194,7 +194,7 @@ export const buttonBackground = props => {
       color = variables.setColors.primary
       break
     default:
-      color = variables.setColors.default
+      color = variables.setColors.primary
   }
   return color
 }
