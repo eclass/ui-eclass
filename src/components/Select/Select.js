@@ -5,12 +5,6 @@ import { Icon } from '../UI/Icons'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 
-/**
-- Use an avatar for attributing actions or content to specific users.
-- The user's name should always be present when using Avatar – either printed beside the avatar or in a tooltip.
-**/
-
-
 const Select = ({ disabled, label, placeholder, data }) => {
     const [icon, setIcon] = useState(null)
     const [borderValid, setBorderValid] = useState(false)
@@ -52,6 +46,8 @@ const Select = ({ disabled, label, placeholder, data }) => {
     )
 }
 
+export default Select
+
 // @Proptypes
 Select.propTypes = {
     disabled:PropTypes.bool, 
@@ -66,6 +62,3 @@ Select.defaultProps = {
     placeholder: "Placeholder",
     label: "Etiqueta",
 }
-
-
-export default Select
