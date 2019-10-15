@@ -6,6 +6,7 @@ import variables from '../variables'
 
 const Wrapper = styled.div`
 
+height: 97px;
 
 label{
     font-size: 14px;
