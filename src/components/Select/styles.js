@@ -4,7 +4,7 @@ import { stre } from '../UI/svg'
 
 
 const Wrapper = styled.div`
-
+height: 97px;
 select {
     width: 400px;
     height: 44px;

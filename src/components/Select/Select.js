@@ -18,11 +18,9 @@ const Select = ({ disabled, label, placeholder, data }) => {
             clearTimeout(timer)
             timer = setTimeout( () => {setIcon(<div className="invalid_feedback" ><Icon width={17} fill="#ffff" name="circularError"></Icon>Seleccione una opción válida</div>); setBorderValid(false)
             setBorderInvalid(true) }, interval)
-            console.log("incorrecto")
         }else{
             timer = setTimeout( () => {setIcon(<div  className="valid_feedback" ><Icon width={17} fill="#ffff" name="circularCheck"></Icon>Correcto</div>); setBorderInvalid(false)
             setBorderValid(true) }, interval)
-            console.log("correcto")
         }
     }
 
