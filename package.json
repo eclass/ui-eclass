@@ -3,18 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "availity-reactstrap-validation": "^2.6.0",
-    "bootstrap": "^4.3.1",
-    "classnames": "^2.2.6",
-    "polished": "^3.4.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.1.2",
-    "react-touch-ripple": "^0.2.1",
-    "reactstrap": "^8.0.1",
-    "styled-components": "^4.4.0"
+    "availity-reactstrap-validation": "2.6.0",
+    "bootstrap": "4.3.1",
+    "classnames": "2.2.6",
+    "polished": "3.4.1",
+    "prop-types": "15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "3.2.0",
+    "react-touch-ripple": "0.2.1",
+    "reactstrap": "8.0.1",
+    "styled-components": "4.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,13 +40,13 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^5.2.3",
-    "@storybook/addon-actions": "^5.2.3",
-    "@storybook/addon-docs": "^5.2.4",
-    "@storybook/addon-links": "^5.2.3",
-    "@storybook/addon-viewport": "^5.2.4",
-    "@storybook/addons": "^5.2.3",
-    "@storybook/react": "^5.2.3",
-    "storybook-readme": "^5.0.8"
+    "@storybook/addon-a11y": "5.2.3",
+    "@storybook/addon-actions": "5.2.3",
+    "@storybook/addon-docs": "5.2.4",
+    "@storybook/addon-links": "5.2.3",
+    "@storybook/addon-viewport": "5.2.4",
+    "@storybook/addons": "5.2.3",
+    "@storybook/react": "5.2.3",
+    "storybook-readme": "5.0.8"
   }
 }
