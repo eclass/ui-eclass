@@ -26,6 +26,8 @@
     "availity-reactstrap-validation": "2.6.0",
     "bootstrap": "4.3.1",
     "classnames": "2.2.6",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
     "polished": "3.4.1",
     "prop-types": "15.7.2",
     "react": "16.10.2",
@@ -42,10 +44,64 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "build-storybook -c .storybook",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "lint:js": "eslint . --ext .js,.jsx",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "format": "prettier-standard '{src,test}/**/*.{js,tsx}'"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "npm run --silent lint:js:fix",
+      "prettier-standard",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "jsxBracketSameLine": true,
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": false
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "extends": [
+      "standard",
+      "react-app",
+      "prettier",
+      "prettier/flowtype",
+      "prettier/react",
+      "prettier/standard"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "flowtype",
+      "prettier",
+      "standard"
+    ],
+    "rules": {
+      "no-console": [
+        "error"
+      ],
+      "jsx-a11y/href-no-hash": [
+        0
+      ],
+      "@typescript-eslint/consistent-type-assertions": "off",
+      "@typescript-eslint/no-angle-bracket-type-assertion": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -67,6 +123,22 @@
     "@storybook/addon-viewport": "5.2.4",
     "@storybook/addons": "5.2.4",
     "@storybook/react": "5.2.4",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-config-react-app": "^5.0.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^1.18.2",
+    "prettier-standard": "^15.0.1",
     "storybook-readme": "5.0.8"
   },
   "renovate": {
