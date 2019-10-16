@@ -131,10 +131,10 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-conventional": "^8.2.0",
-    "@commitlint/prompt-cli": "^8.2.0",
-    "@innocells/branch-naming-check": "^1.0.0",
+    "@commitlint/cli": "8.2.0",
+    "@commitlint/config-conventional": "8.2.0",
+    "@commitlint/prompt-cli": "8.2.0",
+    "@innocells/branch-naming-check": "1.0.0",
     "@storybook/addon-a11y": "5.2.4",
     "@storybook/addon-actions": "5.2.4",
     "@storybook/addon-docs": "5.2.4",
@@ -158,7 +158,7 @@
     "eslint-plugin-standard": "4.0.1",
     "prettier": "1.18.2",
     "prettier-standard": "15.0.1",
-    "semantic-release": "^15.13.24",
+    "semantic-release": "15.13.24",
     "storybook-readme": "5.0.8"
   },
   "renovate": {
