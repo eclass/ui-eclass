@@ -946,7 +946,7 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@commitlint/cli@^8.2.0":
+"@commitlint/cli@8.2.0":
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-8.2.0.tgz#fbf9969e04e2162d985eaa644fdad6ce807aadb6"
   integrity sha512-8fJ5pmytc38yw2QWbTTJmXLfSiWPwMkHH4govo9zJ/+ERPBF2jvlxD/dQvk24ezcizjKc6LFka2edYC4OQ+Dgw==
@@ -963,7 +963,7 @@
     resolve-from "5.0.0"
     resolve-global "1.0.0"
 
-"@commitlint/config-conventional@^8.2.0":
+"@commitlint/config-conventional@8.2.0":
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-8.2.0.tgz#886a5538e3708e017ec2871e0cbce00f635d3102"
   integrity sha512-HuwlHQ3DyVhpK9GHgTMhJXD8Zp8PGIQVpQGYh/iTrEU6TVxdRC61BxIDZvfWatCaiG617Z/U8maRAFrqFM4TqA==
@@ -1033,7 +1033,7 @@
     conventional-commits-parser "^2.1.0"
     lodash "^4.17.11"
 
-"@commitlint/prompt-cli@^8.2.0":
+"@commitlint/prompt-cli@8.2.0":
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/@commitlint/prompt-cli/-/prompt-cli-8.2.0.tgz#9998294474381b32b9af80ec534193b3a762e228"
   integrity sha512-o8PFlOji4NpLo4dwM23KMe4TCayXucDKtJr/vbO/0tFGBIcPVZH16MrQaMiOTuIphGgUAlw9DGytFgXNlSJ1og==
@@ -1241,7 +1241,7 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@innocells/branch-naming-check@^1.0.0":
+"@innocells/branch-naming-check@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@innocells/branch-naming-check/-/branch-naming-check-1.0.0.tgz#be2270df57d7aad9f0de0e776aea065ad0ead020"
   integrity sha512-3kjEIhQvaZ4GTxJURZ5CRpu25xk3ipy/U3zOE/IyZ2zh/FXz9qiNWW4SwhIoYawHHHJsfTDGQHKg2+MtTPTYaQ==
@@ -13823,7 +13823,7 @@ selfsigned@^1.9.1:
   dependencies:
     node-forge "0.9.0"
 
-semantic-release@^15.13.24:
+semantic-release@15.13.24:
   version "15.13.24"
   resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.13.24.tgz#f0b9544427d059ba5e3c89ac1545234130796be7"
   integrity sha512-OPshm6HSp+KmZP9dUv1o3MRILDgOeHYWPI+XSpQRERMri7QkaEiIPkZzoNm2d6KDeFDnp03GphQQS4+Zfo+x/Q==
