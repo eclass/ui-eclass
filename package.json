@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "description": "Componentes UI de eClass",
   "license": "MIT",
+  "author": "Team Plataforma Estudio - eClass 2019",
+  "contributors": [
+    "Sebastián González Riffo <sebastian@eclass.cl> (https://gitlab.com/segonzalezr)",
+    "Ender Bonnet <ebonnet@eclass.cl> (https://gitlab.com/ebonnet1)",
+    "Jonathan Garrido <jgarrido@eclass.cl> (https://gitlab.com/Jonathangarrido)",
+    "Josefin Ferrada <jferrada@eclass.cl> (https://gitlab.com/jferrada)"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/eclass/ui-eclass"
