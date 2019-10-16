@@ -1,7 +1,25 @@
 {
   "name": "react-ui-eclass-v8",
   "version": "0.1.0",
-  "private": true,
+  "description": "Componentes UI de eClass",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eclass/ui-eclass"
+  },
+  "bugs": {
+    "url": "https://github.com/eclass/ui-eclass/issues"
+  },
+  "homepage": "https://ui-eclass.netlify.com/",
+  "keywords": [
+    "ui",
+    "eclass",
+    "components",
+    "react"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.1.2",
     "@testing-library/react": "^9.3.0",
@@ -50,5 +68,10 @@
     "@storybook/addons": "5.2.4",
     "@storybook/react": "5.2.4",
     "storybook-readme": "5.0.8"
+  },
+  "renovate": {
+    "extends": [
+      "@eclass:js-lib"
+    ]
   }
 }
