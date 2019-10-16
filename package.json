@@ -42,7 +42,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "develop": "start-storybook -p 9009 -s public",
     "storybook": "build-storybook -c .storybook",
     "build-storybook": "build-storybook -s public",
     "lint:js": "eslint . --ext .js,.jsx",
