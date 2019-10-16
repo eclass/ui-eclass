@@ -139,6 +139,7 @@
     "eslint-plugin-standard": "4.0.1",
     "prettier": "1.18.2",
     "prettier-standard": "15.0.1",
+    "semantic-release": "^15.13.24",
     "storybook-readme": "5.0.8"
   },
   "renovate": {
