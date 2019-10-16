@@ -1,14 +1,13 @@
 import styled from 'styled-components'
 import variables from '../variables'
-import { 
+import {
   buttonActionColor,
   buttonBackground,
   buttonBorder,
   buttonSize,
   buttonColor,
-  isDisabled,
-  } from './Button'
-
+  isDisabled
+} from './Button'
 
 const StyledButton = styled.button`
   background: ${props => buttonBackground(props)};
@@ -69,4 +68,4 @@ const StyledIcon = styled.span`
   vertical-align: middle;
 `
 
-export { StyledIcon, StyledButton}
+export { StyledIcon, StyledButton }

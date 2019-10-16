@@ -11,7 +11,7 @@ storiesOf('ProgressIcon', module)
       style={{
         display: 'flex',
         padding: '2em',
-        justifyContent: 'space-around'
+        justifyContent: 'space-between'
       }}>
       {story()}
     </div>
