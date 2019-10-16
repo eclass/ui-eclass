@@ -7,7 +7,7 @@ import variables from '../variables'
 
 storiesOf('ProgressIcon', module)
     .addDecorator(withA11y)
-    .addDecorator(story => <div style={{ display: 'flex', padding: '2em', justifyContent: "space-around" }}>{story()}</div>)
+    .addDecorator(story => <div style={{ display: 'flex', padding: '2em',  justifyContent: "space-between" }}>{story()}</div>)
     .add('All', () => <>
     <ProgressIcon color="white" bgcolor={variables.setColors.deepSkyBlue} icon={"in-progress"} />
     <ProgressIcon color="white" bgcolor={variables.setColors.deepSkyBlue} icon={"in-progress"} />

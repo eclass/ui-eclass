@@ -10,7 +10,6 @@ const TooltipTrigger = ({ target, children, className, trigger, placement }) => 
     return (
         <Wrapper>
             <Tooltip
-                className={"Timeline__tooltip"}
                 placement={placement}
                 isOpen={tooltipOpen}
                 delay={0}
