@@ -1,14 +1,11 @@
-import React from 'react';
-import { StyledButton, StyledIcon} from './styles'
+import React from 'react'
+import { StyledButton, StyledIcon } from './styles'
 import Pressed from './Pressed'
 import variables from '../variables'
 import DelayLink from './DelayLink'
 import { darken, transparentize } from 'polished'
 import Tooltip from 'reactstrap/lib/Tooltip'
 import PropTypes from 'prop-types'
-
-
-
 
 export default function Button ({
   id,
@@ -26,10 +23,10 @@ export default function Button ({
   text,
   tooltip,
   type,
-  className,
-  tabIndex,
+  className = '',
+  tabIndex = '',
   testid,
-  children
+  children = {}
 }) {
   const renderButton = () => (
     <StyledButton
@@ -121,7 +118,6 @@ export default function Button ({
   }
 }
 
-
 // @Proptypes
 Button.propTypes = {
   border: PropTypes.bool,
@@ -144,10 +140,7 @@ Button.defaultProps = {
   state: 'ghost'
 }
 
-
-
 // @Styles
-
 
 export const buttonColor = props => {
   if (props.border) {
@@ -171,7 +164,7 @@ export const buttonBackground = props => {
   }
 }
 
- export const buttonState = state => {
+export const buttonState = state => {
   let color
 
   switch (state) {
@@ -190,7 +183,7 @@ export const buttonBackground = props => {
     case 'danger':
       color = variables.setColors.danger
       break
-    case 'ghost': 
+    case 'ghost':
       color = variables.setColors.primary
       break
     default:
@@ -199,7 +192,7 @@ export const buttonBackground = props => {
   return color
 }
 
- export const buttonSize = (size, text) => {
+export const buttonSize = (size, text) => {
   let btnSize
 
   switch (size) {
@@ -236,7 +229,7 @@ export const buttonActionColor = (action, props) => {
     borderColor = colorState
     color = variables.setColors.primary
     background = transparentize(0.95, colorState)
-  } else if (props.border || props.state === 'primary'){
+  } else if (props.border || props.state === 'primary') {
     color = 'white'
     if (action === 'hover') {
       percent = 0.03
@@ -259,8 +252,7 @@ export const buttonBorder = props => {
     return {
       border: `1px solid ${color}`
     }
-  }
-  else if (props.border || props.state === 'ghost') {
+  } else if (props.border || props.state === 'ghost') {
     const color = buttonColor(props)
     return {
       border: `1px solid ${color}`
@@ -268,7 +260,7 @@ export const buttonBorder = props => {
   }
 }
 
- export const isDisabled = props => {
+export const isDisabled = props => {
   if (props.border) {
     return {
       borderColor: '#e6e6e6',

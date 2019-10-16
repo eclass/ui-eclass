@@ -39,5 +39,3 @@ ProgressIcon.propTypes = {
   width: PropTypes.string,
   onClick: PropTypes.func
 }
-
-
