@@ -47,13 +47,19 @@
     "build-storybook": "build-storybook -s public",
     "lint:js": "eslint . --ext .js,.jsx",
     "lint:js:fix": "npm run lint:js -- --fix",
-    "format": "prettier-standard '{src,test}/**/*.{js,tsx}'"
+    "format": "prettier-standard '{src,test}/**/*.{js,tsx}'",
+    "branch-naming-check": "branch-naming-check '^(master|dev)|(feature|bugfix|refactor|ci|hotfix|jira|issue|renovate)/[a-zA-Z0-9._-]+$'"
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
       "npm run --silent lint:js:fix",
       "prettier-standard",
       "git add"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
     ]
   },
   "prettier": {
@@ -64,7 +70,9 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run branch-naming-check && lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "echo 👌 \"== Revisando Test Unitarios ==\"; CI=true react-scripts test"
     }
   },
   "eslintConfig": {
@@ -116,6 +124,10 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/prompt-cli": "^8.2.0",
+    "@innocells/branch-naming-check": "^1.0.0",
     "@storybook/addon-a11y": "5.2.4",
     "@storybook/addon-actions": "5.2.4",
     "@storybook/addon-docs": "5.2.4",
