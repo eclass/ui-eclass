@@ -1,16 +1,13 @@
-import React from 'react';
-import { StyledButton, StyledIcon} from './styles'
-import Pressed from './Pressed'
-import variables from '../variables'
-import DelayLink from './DelayLink'
-import { darken, transparentize } from 'polished'
-import Tooltip from 'reactstrap/lib/Tooltip'
-import PropTypes from 'prop-types'
+import React from "react";
+import { StyledButton, StyledIcon } from "./styles";
+import Pressed from "./Pressed";
+import variables from "../variables";
+import DelayLink from "./DelayLink";
+import { darken, transparentize } from "polished";
+import Tooltip from "reactstrap/lib/Tooltip";
+import PropTypes from "prop-types";
 
-
-
-
-export default function Button ({
+export default function Button({
   id,
   border,
   disabled,
@@ -26,10 +23,10 @@ export default function Button ({
   text,
   tooltip,
   type,
-  className,
-  tabIndex,
+  className = "",
+  tabIndex = "",
   testid,
-  children
+  children = {}
 }) {
   const renderButton = () => (
     <StyledButton
@@ -45,14 +42,16 @@ export default function Button ({
       text={text}
       state={state}
       tabIndex={tabIndex}
-      type={type}>
+      type={type}
+    >
       <Pressed
         ghost={ghost}
         disabled={disabled}
         state={state}
         border={border}
         opacity={opacityPressed}
-        color={colorPressed()}>
+        color={colorPressed()}
+      >
         {icon && (
           <StyledIcon
             icon={icon}
@@ -65,16 +64,16 @@ export default function Button ({
         )}
       </Pressed>
     </StyledButton>
-  )
+  );
 
   const colorPressed = () => {
-    if (border || state === 'link') {
-      return buttonState(state)
-    } else if (border || state === 'ghost') {
-      return buttonState(state)
+    if (border || state === "link") {
+      return buttonState(state);
+    } else if (border || state === "ghost") {
+      return buttonState(state);
     }
-    return undefined
-  }
+    return undefined;
+  };
 
   if (link && !tooltip) {
     return blank ? (
@@ -83,17 +82,18 @@ export default function Button ({
       </a>
     ) : (
       <DelayLink to={link}>{renderButton()}</DelayLink>
-    )
+    );
   } else if (!link && tooltip) {
     return (
       <Tooltip
         placement="right"
         isOpen={this.state.tooltipOpen}
         target="TooltipExample"
-        toggle={this.toggle}>
+        toggle={this.toggle}
+      >
         {renderButton()}
       </Tooltip>
-    )
+    );
   } else if (link && tooltip) {
     return blank ? (
       <a target="_blank" rel="noopener noreferrer" href={link}>
@@ -101,7 +101,8 @@ export default function Button ({
           placement="right"
           isOpen={this.state.tooltipOpen}
           target="TooltipExample"
-          toggle={this.toggle}>
+          toggle={this.toggle}
+        >
           {renderButton()}
         </Tooltip>
       </a>
@@ -111,16 +112,16 @@ export default function Button ({
           placement="right"
           isOpen={this.state.tooltipOpen}
           target="TooltipExample"
-          toggle={this.toggle}>
+          toggle={this.toggle}
+        >
           {renderButton()}
         </Tooltip>
       </DelayLink>
-    )
+    );
   } else {
-    return renderButton()
+    return renderButton();
   }
 }
-
 
 // @Proptypes
 Button.propTypes = {
@@ -138,144 +139,140 @@ Button.propTypes = {
   tooltip: PropTypes.string,
   type: PropTypes.string,
   testid: PropTypes.string
-}
+};
 
 Button.defaultProps = {
-  state: 'ghost'
-}
-
-
+  state: "ghost"
+};
 
 // @Styles
 
-
 export const buttonColor = props => {
   if (props.border) {
-    return buttonState(props.state)
-  } else if (props.state === 'link') {
-    return variables.setColors.primary
-  } else if (props.state === 'ghost') {
-    return variables.setColors.primary
+    return buttonState(props.state);
+  } else if (props.state === "link") {
+    return variables.setColors.primary;
+  } else if (props.state === "ghost") {
+    return variables.setColors.primary;
   } else {
-    return 'white'
+    return "white";
   }
-}
+};
 
 export const buttonBackground = props => {
-  if (props.border || props.state === 'link') {
-    return 'transparent'
-  } else if (props.border || props.state === 'ghost') {
-    return 'white'
+  if (props.border || props.state === "link") {
+    return "transparent";
+  } else if (props.border || props.state === "ghost") {
+    return "white";
   } else {
-    return buttonState(props.state)
+    return buttonState(props.state);
   }
-}
+};
 
- export const buttonState = state => {
-  let color
+export const buttonState = state => {
+  let color;
 
   switch (state) {
-    case 'primary':
-      color = variables.setColors.primary
-      break
-    case 'info':
-      color = variables.setColors.info
-      break
-    case 'success':
-      color = variables.setColors.buttons.success
-      break
-    case 'warning':
-      color = variables.setColors.warning
-      break
-    case 'danger':
-      color = variables.setColors.danger
-      break
-    case 'ghost': 
-      color = variables.setColors.primary
-      break
+    case "primary":
+      color = variables.setColors.primary;
+      break;
+    case "info":
+      color = variables.setColors.info;
+      break;
+    case "success":
+      color = variables.setColors.buttons.success;
+      break;
+    case "warning":
+      color = variables.setColors.warning;
+      break;
+    case "danger":
+      color = variables.setColors.danger;
+      break;
+    case "ghost":
+      color = variables.setColors.primary;
+      break;
     default:
-      color = variables.setColors.primary
+      color = variables.setColors.primary;
   }
-  return color
-}
+  return color;
+};
 
- export const buttonSize = (size, text) => {
-  let btnSize
+export const buttonSize = (size, text) => {
+  let btnSize;
 
   switch (size) {
-    case 'lg':
-      btnSize = { height: '30px', fontSize: '14px', width: 'auto' }
-      break
-    case 'sm':
-      btnSize = { height: '30px', fontSize: '14px', width: 'auto' }
-      break
-    case 'xs':
-      btnSize = { height: '30px', fontSize: '14px', width: 'auto' }
-      break
+    case "lg":
+      btnSize = { height: "30px", fontSize: "14px", width: "auto" };
+      break;
+    case "sm":
+      btnSize = { height: "30px", fontSize: "14px", width: "auto" };
+      break;
+    case "xs":
+      btnSize = { height: "30px", fontSize: "14px", width: "auto" };
+      break;
     default:
       btnSize = {
-        height: text ? '44px' : 'auto',
-        fontSize: '1rem',
-        width: text ? '180px' : '100%'
-      }
+        height: text ? "44px" : "auto",
+        fontSize: "1rem",
+        width: text ? "180px" : "100%"
+      };
   }
-  return btnSize
-}
+  return btnSize;
+};
 
 export const buttonActionColor = (action, props) => {
-  let background
-  let borderColor
-  let color
-  let percent
-  const colorState = buttonState(props.state)
-  if (props.border || props.state === 'link') {
-    borderColor = colorState
-    color = colorState
-    background = transparentize(0.95, colorState)
-  } else if (props.border || props.state === 'ghost') {
-    borderColor = colorState
-    color = variables.setColors.primary
-    background = transparentize(0.95, colorState)
-  } else if (props.border || props.state === 'primary'){
-    color = 'white'
-    if (action === 'hover') {
-      percent = 0.03
-    } else if (action === 'active') {
-      percent = 0.08
+  let background;
+  let borderColor;
+  let color;
+  let percent;
+  const colorState = buttonState(props.state);
+  if (props.border || props.state === "link") {
+    borderColor = colorState;
+    color = colorState;
+    background = transparentize(0.95, colorState);
+  } else if (props.border || props.state === "ghost") {
+    borderColor = colorState;
+    color = variables.setColors.primary;
+    background = transparentize(0.95, colorState);
+  } else if (props.border || props.state === "primary") {
+    color = "white";
+    if (action === "hover") {
+      percent = 0.03;
+    } else if (action === "active") {
+      percent = 0.08;
     }
-    background = darken(percent, colorState)
-    borderColor = darken(percent, colorState)
+    background = darken(percent, colorState);
+    borderColor = darken(percent, colorState);
   }
   return {
     background,
     borderColor,
     color
-  }
-}
+  };
+};
 
 export const buttonBorder = props => {
-  if (props.border || props.state === 'link') {
-    const color = buttonColor(props)
+  if (props.border || props.state === "link") {
+    const color = buttonColor(props);
     return {
       border: `1px solid ${color}`
-    }
-  }
-  else if (props.border || props.state === 'ghost') {
-    const color = buttonColor(props)
+    };
+  } else if (props.border || props.state === "ghost") {
+    const color = buttonColor(props);
     return {
       border: `1px solid ${color}`
-    }
+    };
   }
-}
+};
 
- export const isDisabled = props => {
+export const isDisabled = props => {
   if (props.border) {
     return {
-      borderColor: '#e6e6e6',
+      borderColor: "#e6e6e6",
       color: variables.setColors.veryLightPink
-    }
+    };
   }
   return {
     background: variables.setColors.veryLightPink
-  }
-}
+  };
+};
