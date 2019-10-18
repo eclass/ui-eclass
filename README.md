@@ -53,7 +53,7 @@ Abrir http://localhost:9009
 
 `yarn test`
 
-##Estructura de componentes
+## Estructura de Componentes
 
 ```
 └──  ui-eclass
@@ -67,13 +67,13 @@ Abrir http://localhost:9009
     │   │   │  ├── Button.js
     │   │   │  ├── Button.stories.js
 ```
-##Creación de documentación 
 
-###PropTypes
+## PropTypes 
 
-Para reflejar los proptypes en la documentación
+Para reflejar los proptypes en la documentación deben definirse en el archivo que contenga la lógica del nuevo componente
 
 ### Uso de Ramas
+
 - `master`: código en el ambiente de producción. Todo código que esté acá está publicado y funcional. Además de validado por los `test`. 
 - `dev`: Esta rama es una de preproducción, en donde el código antes de ir a `master` debe ser publicado y aprobado. 
 -  Es muy importante importante es que cada `feat`/`fix`/`refactor` del sistema que se vaya a crear/modificar. Debe estar contenido por una rama en donde se identifique al usuario y el feature. Ejemplo: `feat/login`.
