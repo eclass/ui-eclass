@@ -1,26 +1,31 @@
 import React from 'react'
+import { storiesOf } from '@storybook/react'
 import Select from './Select'
 import regiones from './countries'
 
-export default {
-  title: 'Plataforma v8| Select ',
-
-  parameters: {
-    component: Select,
-    componentSubtitle: 'Selects diseñados para plataforma v8'
-  }
-}
-
-export const Selects = () => (
-  <>
+storiesOf('Select', module)
+  .addDecorator(story => <div style={{ display: 'block' }}>{story()}</div>)
+  .add('All', () => (
+    <>
+      <Select
+        label="Selecciona tu región"
+        placeholder="Selecciona"
+        data={regiones.regiones}
+      />
+      <Select
+        disabled={true}
+        placeholder="Seleccionar"
+        label="Select disabled"
+      />
+    </>
+  ))
+  .add('SelectStandar', () => (
     <Select
       label="Selecciona tu región"
       placeholder="Selecciona"
       data={regiones.regiones}
     />
-  </>
-)
-
-export const disabled = () => (
-  <Select disabled={true} placeholder="Seleccionar" label="Select disabled" />
-)
+  ))
+  .add('SelectDisabled', () => (
+    <Select disabled={true} placeholder="Seleccionar" label="Select disabled" />
+  ))

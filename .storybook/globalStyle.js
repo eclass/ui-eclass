@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
 .tooltip {
     .tooltip-inner{
         font-size: 11px;
-        font-weight: 400 !important;
+        font-weight: 300 !important;
         border-radius: 10px;
         padding: 6px 10px;
         text-align: left !important;
@@ -18,5 +18,6 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 }
+
 `
 export default GlobalStyle
