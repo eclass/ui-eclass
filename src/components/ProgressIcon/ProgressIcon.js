@@ -27,6 +27,12 @@ const ProgressIcon = ({
 
 export default ProgressIcon
 
+// @Default Proptypes
+ProgressIcon.defaultProps = {
+  color: 'white',
+  bgcolor: 'orange'
+}
+
 // @Proptypes
 ProgressIcon.propTypes = {
   id: PropTypes.string,

@@ -1,89 +1,63 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import InputText from './InputText'
-import { action } from '@storybook/addon-actions'
 
-storiesOf('InputText', module)
-  .addDecorator(story => <div style={{ display: 'block' }}>{story()}</div>)
-  .add('All', () => (
-    <>
-      <InputText
-        placeholder="Escribe algo..."
-        label="Etiqueta"
-        onClick={action('click')}
-      />
-      <InputText
-        placeholder="Escribe algo..."
-        autoFocus={true}
-        label="Autofocus"
-        onClick={action('click')}
-      />
-      <InputText
-        placeholder="Placeholder"
-        label="Disabled"
-        disabled={true}
-        onClick={action('click')}
-      />
-      <InputText
-        placeholder="Ingresa un número de teléfono"
-        label="Número de teléfono"
-        type="phone"
-        onClick={action('click')}
-      />
-      <InputText
-        placeholder="Correo electrónico"
-        label="Correo electrónico"
-        type="email"
-      />
-      <InputText
-        placeholder="Ingresa tu nombre"
-        label="Nombre"
-        type="alphabetic"
-      />
-    </>
-  ))
-  .add('InputText', () => (
-    <InputText
-      placeholder="Escribe algo..."
-      label="Etiqueta"
-      onClick={action('click')}
-    />
-  ))
-  .add('InputAutoFocus', () => (
+export default {
+  title: 'Plataforma v8|Input',
+
+  parameters: {
+    component: InputText,
+    componentSubtitle: 'Inputs diseñados para v8 y sus validaciones'
+  }
+}
+
+export const input = () => (
+  <>
+    <InputText placeholder="Escribe algo..." label="Estandar" />
+  </>
+)
+
+export const autofocus = () => (
+  <>
     <InputText
       placeholder="Escribe algo..."
       autoFocus={true}
       label="Autofocus"
-      onClick={action('click')}
     />
-  ))
-  .add('InputDisabled', () => (
-    <InputText
-      placeholder="Placeholder"
-      label="Disabled"
-      disabled={true}
-      onClick={action('click')}
-    />
-  ))
-  .add('InputValidationPhone', () => (
+  </>
+)
+
+export const disabled = () => (
+  <>
+    <InputText placeholder="Placeholder" label="Disabled" disabled={true} />{' '}
+  </>
+)
+
+export const validationPhone = () => (
+  <>
     <InputText
       placeholder="Ingresa un número de teléfono"
       label="Número de teléfono"
       type="phone"
-      onClick={action('click')}
     />
-  ))
-  .add('InputValidationEmail', () => (
+  </>
+)
+
+export const validationEmail = () => (
+  <>
     <InputText
       placeholder="Correo electrónico"
       label="Correo electrónico"
       type="email"
     />
-  ))
-  .add('InputValidationAlphabetic', () => (
+  </>
+)
+
+export const validationAlphabetic = () => (
+  <>
     <InputText
       placeholder="Ingresa tu nombre"
       label="Nombre"
       type="alphabetic"
     />
-  ))
+  </>
+)
