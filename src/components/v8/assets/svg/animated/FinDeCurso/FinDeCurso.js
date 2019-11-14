@@ -1,21 +1,22 @@
 import React from 'react'
-import proximoCursoFem from './proximoCursoFem.svg'
-import proximoCursoMas from './proximoCursoMas.svg'
+import finDeCursoFem from './finDeCursoFem.svg'
+import finDeCursoMas from './finDeCursoMas.svg'
 
 /**
- * ProximoCurso
- * Regresa el SVG de ProximoCurso
- *
- * Por defecto retorna con genero masculino
+ * FinDeCurso
+Regresa el SVG de FinDeCurso.
+
+Por defecto retorna con genero masculino
  *
  * @params {number} gender - 1 es masculino, 2 es femenino
  * @params {string} className
+ * @example
  */
-export const ProximoCurso = ({ gender, className = '' }) => {
+export const FinDeCurso = ({ gender, className = '' }) => {
   if (gender === 1) {
     return (
       <img
-        src={proximoCursoMas}
+        src={finDeCursoMas}
         className={`Hito__Animado ${className}`}
         alt=" "
       />
@@ -23,7 +24,7 @@ export const ProximoCurso = ({ gender, className = '' }) => {
   } else {
     return (
       <img
-        src={proximoCursoFem}
+        src={finDeCursoFem}
         className={`Hito__Animado ${className}`}
         alt=" "
       />

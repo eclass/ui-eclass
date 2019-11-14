@@ -27,24 +27,6 @@
   "engines": {
     "node": ">=12.0.0"
   },
-  "dependencies": {
-    "@testing-library/jest-dom": "4.1.2",
-    "@testing-library/react": "9.3.0",
-    "availity-reactstrap-validation": "2.6.0",
-    "bootstrap": "4.3.1",
-    "classnames": "2.2.6",
-    "husky": "3.0.9",
-    "lint-staged": "9.4.3",
-    "polished": "3.4.1",
-    "prop-types": "15.7.2",
-    "react": "16.10.2",
-    "react-dom": "16.10.2",
-    "react-router-dom": "5.1.2",
-    "react-scripts": "3.2.0",
-    "react-touch-ripple": "0.2.1",
-    "reactstrap": "8.1.1",
-    "styled-components": "4.4.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -52,85 +34,23 @@
     "develop": "start-storybook -p 9009 -s public",
     "storybook": "build-storybook -c .storybook",
     "build-storybook": "build-storybook -s public",
+    "lint": "eslint . --fix",
     "lint:js": "eslint . --ext .js,.jsx",
     "lint:js:fix": "npm run lint:js -- --fix",
     "format": "prettier-standard '{src,test}/**/*.{js,tsx}'",
     "branch-naming-check": "branch-naming-check '^(master|dev)|(feature|bugfix|refactor|ci|hotfix|jira|issue|renovate)/[a-zA-Z0-9._-]+$'"
   },
-  "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "npm run --silent lint:js:fix",
-      "prettier-standard",
-      "git add"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "prettier": {
-    "jsxBracketSameLine": true,
-    "semi": false,
-    "singleQuote": true,
-    "jsxSingleQuote": false
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run branch-naming-check && lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "echo 👌 \"== Revisando Test Unitarios ==\"; CI=true react-scripts test"
-    }
-  },
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "es6": true
-    },
-    "extends": [
-      "standard",
-      "react-app",
-      "prettier",
-      "prettier/flowtype",
-      "prettier/react",
-      "prettier/standard"
-    ],
-    "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
-      },
-      "sourceType": "module"
-    },
-    "plugins": [
-      "react",
-      "flowtype",
-      "prettier",
-      "standard"
-    ],
-    "rules": {
-      "no-console": [
-        "error"
-      ],
-      "jsx-a11y/href-no-hash": [
-        0
-      ],
-      "@typescript-eslint/consistent-type-assertions": "off",
-      "@typescript-eslint/no-angle-bracket-type-assertion": "off"
-    }
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
+    "@eclass/eslint-config": "1.1.3",
+    "@semantic-release/changelog": "3.0.5",
+    "@semantic-release/git": "7.0.18",
+    "eslint-plugin-array-func": "3.1.3",
+    "eslint-plugin-eslint-comments": "3.1.2",
+    "eslint-plugin-jsdoc": "18.0.1",
+    "eslint-plugin-security": "1.4.0",
+    "eslint-plugin-sonarjs": "0.5.0",
+    "husky": "3.0.9",
+    "lint-staged": "9.4.3",
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
     "@commitlint/prompt-cli": "8.2.0",
@@ -161,9 +81,76 @@
     "semantic-release": "15.13.24",
     "storybook-readme": "5.0.8"
   },
+  "dependencies": {
+    "@testing-library/jest-dom": "4.1.2",
+    "@testing-library/react": "9.3.0",
+    "availity-reactstrap-validation": "2.6.0",
+    "bootstrap": "4.3.1",
+    "classnames": "2.2.6",
+    "husky": "3.0.9",
+    "lint-staged": "9.4.3",
+    "polished": "3.4.1",
+    "prop-types": "15.7.2",
+    "react": "16.10.2",
+    "react-dom": "16.10.2",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "3.2.0",
+    "react-touch-ripple": "0.2.1",
+    "reactstrap": "8.1.1",
+    "styled-components": "4.4.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "prettier-standard",
+      "git add"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "prettier": {
+    "jsxBracketSameLine": true,
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": false
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "eslintConfig": {
+    "extends": "@eclass"
+  },
+  "eslintIgnore": [],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "renovate": {
     "extends": [
       "@eclass:js-lib"
+    ]
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
     ]
   }
 }

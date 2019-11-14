@@ -1,12 +1,12 @@
 /**
  * @typedef {Object} Vars
- * @property {Object} setColors - Cambiar color
+ * @property {Object} setColors - Cambiar color.
  */
 export default {
   // // Border
   borderRadius: '10px',
   /**
-   * Colores
+   * Colores.
    */
   setColors: {
     primary: '#0189ff',
@@ -23,11 +23,15 @@ export default {
       success: '#2cb26b'
     },
     /**
-     * Transforma un hexadecimal a
-     * ```css
-     *  rgba(255,255,255,0.3)
-     * ```
-     */
+ * Transforma un hexadecimal a
+```css
+rgba(255,255,255,0.3)
+```.
+ *
+ * @example
+ * @param hex
+ * @param opacity
+ */
     hexToRgbA: (hex, opacity) => hexToRgbA(hex, opacity),
 
     black: '#2f2f2f',
@@ -114,15 +118,15 @@ export default {
 }
 
 /**
- * Pasa un color hexadecimal a rgba()
+ * Pasa un color hexadecimal a rgba().
  *
- * @param {string} hex - color en hexadecimal
- * @param {number} opacity - opacidad
+ * @param {string} hex - Color en hexadecimal.
+ * @param {number} opacity - Opacidad.
  * @example
  * ```js
  *   const color = hexToRgbA('FFAACC', 0,2)
  * ```
- * @returns {string} Color en `rgba(255, 0, 0, 0.2)`
+ * @returns {string} Color en `rgba(255, 0, 0, 0.2)`.
  */
 const hexToRgbA = (hex, opacity) => {
   let c

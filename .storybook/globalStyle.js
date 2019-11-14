@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
-import variables from '../src/components/variables'
-import Close from '../src/components/UI/svg/cerrar-definicion.svg'
-
+import variables from '../src/components/v8/variables'
+import Close from '../src/components/v8/assets/svg/cerrar-definicion.svg'
 
 const GlobalStyle = createGlobalStyle`
 .tooltip {
@@ -12,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
         padding: 6px 10px;
         text-align: left !important;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
-        
         strong {
         font-weight: 500;
         }

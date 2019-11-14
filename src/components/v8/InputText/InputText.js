@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Wrapper } from './styles'
 import { Input, Label } from 'reactstrap'
-import { Icon } from '../UI/Icons'
+import { Icon } from '../assets/Icons'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 

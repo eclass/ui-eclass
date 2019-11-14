@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import variables from '../variables'
-import { stre } from '../UI/svg'
+import { stre } from '../assets/svg'
 
 const Wrapper = styled.div`
   height: 97px;
