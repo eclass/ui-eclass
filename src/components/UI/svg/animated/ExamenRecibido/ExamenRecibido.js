@@ -4,12 +4,13 @@ import examenRecibidoMas from './examenRecibidoMas.svg'
 
 /**
  * ExamenRecibido
- * Regresa el SVG de ExamenRecibido
- *
- * Por defecto retorna con genero masculino
+Regresa el SVG de ExamenRecibido.
+
+Por defecto retorna con genero masculino
  *
  * @params {number} gender - 1 es masculino, 2 es femenino
  * @params {string} className
+ * @example
  */
 export const ExamenRecibido = ({ gender, className = '' }) => {
   if (gender === 1) {
