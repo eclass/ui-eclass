@@ -388,8 +388,10 @@ const getPath = (name, props) => {
 // @Component
 /**
  * Este componente se encarga de dibujar todos los íconos svg pequeños de la app.
- * Los íconos más elaborados, tienen un archivo exclusivo para cada uno, por ejemplo
- * los de Ranking.
+Los íconos más elaborados, tienen un archivo exclusivo para cada uno, por ejemplo
+los de Ranking.
+ *
+ * @example
  */
 const Icon = ({
   name = '',

@@ -4,12 +4,13 @@ import finDeCursoMas from './finDeCursoMas.svg'
 
 /**
  * FinDeCurso
- * Regresa el SVG de FinDeCurso
- *
- * Por defecto retorna con genero masculino
+Regresa el SVG de FinDeCurso.
+
+Por defecto retorna con genero masculino
  *
  * @params {number} gender - 1 es masculino, 2 es femenino
  * @params {string} className
+ * @example
  */
 export const FinDeCurso = ({ gender, className = '' }) => {
   if (gender === 1) {

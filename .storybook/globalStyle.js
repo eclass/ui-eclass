@@ -4,6 +4,7 @@ import Close from '../src/components/UI/svg/cerrar-definicion.svg'
 
 
 const GlobalStyle = createGlobalStyle`
+font-family: 'Roboto' !important;
 .tooltip {
     .tooltip-inner{
         font-size: 11px;

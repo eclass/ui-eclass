@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules",
+      "coverage/lcov-report/*.js"
+    ]
+  },
+  "rules": {
+    "no-shadow": [
+      "error",
+      {
+        "builtinGlobals": false,
+        "hoist": "functions",
+        "allow": []
+      }
+    ],
+    "object-literal-sort-keys": false
+  },
+  "jsRules": {
+    "object-literal-sort-keys": false,
+    "no-bitwise": false
+  }
+}
