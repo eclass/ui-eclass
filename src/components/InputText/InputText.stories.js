@@ -6,7 +6,7 @@ export default {
 
   parameters: {
     component: InputText,
-    componentSubtitle: 'Inputs diseñados para v8 y sus validaciones'
+    componentSubtitle: 'Input con validaciones según tipo'
   }
 }
 
@@ -28,7 +28,7 @@ export const autofocus = () => (
 
 export const disabled = () => (
   <>
-    <InputText placeholder="Placeholder" label="Disabled" disabled={true} />{' '}
+    <InputText placeholder="Placeholder" label="Disabled" disabled={true} />
   </>
 )
 

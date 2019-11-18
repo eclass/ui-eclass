@@ -21,11 +21,6 @@ export const icons = () => (
     <ProgressIcon
       color="white"
       bgcolor={variables.setColors.deepSkyBlue}
-      icon={'in-progress'}
-    />
-    <ProgressIcon
-      color="white"
-      bgcolor={variables.setColors.deepSkyBlue}
       icon={'opened'}
     />
     <ProgressIcon color="white" bgcolor={'orange'} icon={'blocked'} />

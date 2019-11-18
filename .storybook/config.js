@@ -10,7 +10,7 @@ configure(require.context('../src', true, /\.stories\.js$/), module);
 function withGlobalStyle(storyFn) {
     return (
       <>
-        <GlobalStyle />
+        <GlobalStyle/> 
         {storyFn()}
       </>
     );

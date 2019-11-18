@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const Wrapper = styled.figure`
+  font-family: "'Roboto', sans-serif";
   border-radius: 50%;
   flex-shrink: 0;
   height: ${prop => `${prop.size}px`};
@@ -12,10 +13,9 @@ const Wrapper = styled.figure`
   align-items: center;
   justify-content: center;
   span {
-    font-family: 'Roboto';
     color: white;
     text-transform: uppercase;
-    font: bold ${props => `${props.fontSize}px`} / 30px 'Roboto';
+    font: 400 ${props => `${props.fontSize}px`} / 30px 'Roboto', sans-serif;
   }
   img {
     height: 100%;

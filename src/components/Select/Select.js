@@ -77,9 +77,21 @@ export default Select
 
 // @Proptypes
 Select.propTypes = {
+  /**
+  Si está deshabilitado
+  */
   disabled: PropTypes.bool,
+  /**
+  Array de datos a listar
+  */
   data: PropTypes.array,
+  /**
+  Placeholder de select
+  */
   placeholder: PropTypes.string,
+  /**
+  Etiqueta de select
+  */
   label: PropTypes.string
 }
 

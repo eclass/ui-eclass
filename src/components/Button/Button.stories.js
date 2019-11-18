@@ -24,10 +24,24 @@ export const buttons = () => (
   </>
 )
 
-export const sizes = () => (
+export const states = () => (
   <>
     <Button state="primary" text={'Button Primary'} />
     <Button text={'Button Ghost'} ghost={true} />
     <Button state="" text={'Disabled'} disabled={true} />
+  </>
+)
+
+export const OtherStates = () => (
+  <>
+    <Button state="info" text={'Button Primary'} opacityPressed={0} />
+    <Button state="danger" text={'Button Ghost'} />
+    <Button state="warning" text={'Disabled'} />
+  </>
+)
+
+export const xs = () => (
+  <>
+    <Button state="primary" size={'xs'} text={'Disabled'} />
   </>
 )

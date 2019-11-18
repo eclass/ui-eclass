@@ -120,17 +120,60 @@ export default function Button ({
 
 // @Proptypes
 Button.propTypes = {
+  /**
+  Con o sin borde
+  */
   border: PropTypes.bool,
+  /**
+  Si está deshabilitado
+  */
   disabled: PropTypes.bool,
+  /**
+  Si está deshabilitado
+  */
   form: PropTypes.string,
+  /**
+  si contiene un icono
+  */
   icon: PropTypes.string,
+  /**
+  Si contiene un link
+  */
   link: PropTypes.string,
+  /**
+  Fuerza que el documento referenciado por el enlace sea mostrado en una nueva ventana del navegador
+  */
   blank: PropTypes.bool,
+  /**
+  Función al hacer click
+  */
   onClick: PropTypes.func,
+  /**
+  Opacidad al presionar por defecto viene  0.2
+  */
   opacityPressed: PropTypes.number,
-  size: PropTypes.string,
-  state: PropTypes.string,
+  /**
+  Tamaños predeterminados
+  */
+  size: PropTypes.oneOf(['lg', 'sm', 'xs']),
+  /**
+  Estados predeterminados
+  */
+  state: PropTypes.oneOf([
+    'primary',
+    'info',
+    'succes',
+    'warning',
+    'danger',
+    'ghost'
+  ]).isRequired,
+  /**
+  Texto del botón
+  */
   text: PropTypes.string,
+  /**
+  Si tiene tooltip, el mensaje
+  */
   tooltip: PropTypes.string,
   type: PropTypes.string,
   testid: PropTypes.string
@@ -197,7 +240,7 @@ export const buttonSize = (size, text) => {
 
   switch (size) {
     case 'lg':
-      btnSize = { height: '30px', fontSize: '14px', width: 'auto' }
+      btnSize = { height: '70px', fontSize: '14px', width: 'auto' }
       break
     case 'sm':
       btnSize = { height: '30px', fontSize: '14px', width: 'auto' }
