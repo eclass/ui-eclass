@@ -7,7 +7,6 @@ import { darken, transparentize } from 'polished'
 import Tooltip from 'reactstrap/lib/Tooltip'
 import PropTypes from 'prop-types'
 
-// eslint-disable-next-line sonarjs/cognitive-complexity
 export default function Button ({
   id,
   border,

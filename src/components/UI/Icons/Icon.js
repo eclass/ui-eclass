@@ -410,9 +410,7 @@ const Icon = ({
   viewBox,
   testid
 }) => {
-  // eslint-disable-next-line security/detect-object-injection
   if (UIVars.setColors[fill]) {
-    // eslint-disable-next-line security/detect-object-injection
     fill = UIVars.setColors[fill]
   }
 

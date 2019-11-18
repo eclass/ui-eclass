@@ -20,7 +20,6 @@ const DelayLink = ({
       e.preventDefault()
       setTimeout(() => {
         if (external) {
-          // eslint-disable-next-line security/detect-non-literal-fs-filename
           window.open(to, '_blank')
         } else {
           history.push(to)

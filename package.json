@@ -130,6 +130,10 @@
       "@eclass"
     ],
     "rules": {
+      "security/detect-object-injection": 0,
+      "security/detect-non-literal-fs-filename": 0,
+      "security/detect-unsafe-regex": 0,
+      "sonarjs/cognitive-complexity": 0,
       "sonarjs/no-duplicate-string": 0,
       "sonarjs/no-duplicated-branches": 0,
       "sonarjs/max-switch-cases": ["error", 44],

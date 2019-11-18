@@ -130,7 +130,6 @@ rgba(255,255,255,0.3)
  */
 const hexToRgbA = (hex, opacity) => {
   let c
-  // eslint-disable-next-line security/detect-unsafe-regex
   if (/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)) {
     c = hex.substring(1).split('')
     if (c.length === 3) {
