@@ -16,7 +16,7 @@ export const buttons = () => (
     <Button state="primary" text={'Button Primary'} onClick={action('click')} />
     <Button text={'Button Ghost'} ghost={true} onClick={action('click')} />
     <Button
-      state=""
+      state="info"
       text={'Disabled'}
       disabled={true}
       onClick={action('click')}
@@ -26,16 +26,16 @@ export const buttons = () => (
 
 export const states = () => (
   <>
-    <Button state="primary" text={'Button Primary'} />
+    <Button state="primary" text={'Button Blue'} />
     <Button text={'Button Ghost'} ghost={true} />
-    <Button state="" text={'Disabled'} disabled={true} />
+    <Button state="info" text={'Disabled'} disabled={true} />
   </>
 )
 
 export const OtherStates = () => (
   <>
-    <Button state="info" text={'Button Primary'} opacityPressed={0} />
-    <Button state="danger" text={'Button Ghost'} />
+    <Button state="info" text={'Button'} opacityPressed={0} />
+    <Button state="danger" text={'Button'} />
     <Button state="warning" text={'Disabled'} />
   </>
 )

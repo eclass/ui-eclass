@@ -1,1 +1,2 @@
-export * from './ProgressIcon'
+import ProgressIcon from './ProgressIcon'
+export { ProgressIcon }

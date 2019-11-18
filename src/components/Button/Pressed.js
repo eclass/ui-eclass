@@ -41,6 +41,7 @@ const Pressed = ({
 
 // @Proptypes
 Pressed.propTypes = {
+  dark: PropTypes.bool,
   children: PropTypes.node.isRequired,
   color: PropTypes.string,
   disabled: PropTypes.bool,
@@ -73,6 +74,14 @@ const Wrap = ({ color, timeout, under, children, opacity }) => (
     </Ripples>
   </StyledWrap>
 )
+
+Wrap.propTypes = {
+  color: PropTypes.string,
+  timeout: PropTypes.number,
+  under: PropTypes.bool,
+  children: PropTypes.node,
+  opacity: PropTypes.number
+}
 
 // @Export Component
 const StyledWrap = styled.div`

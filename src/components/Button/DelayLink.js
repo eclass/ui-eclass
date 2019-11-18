@@ -52,7 +52,11 @@ const DelayLink = ({
 DelayLink.propTypes = {
   className: PropTypes.string,
   delay: PropTypes.number,
-  external: PropTypes.bool
+  external: PropTypes.bool,
+  children: PropTypes.string,
+  to: PropTypes.string,
+  history: PropTypes.string,
+  disabled: PropTypes.bool
 }
 
 export default styled(withRouter(DelayLink))`

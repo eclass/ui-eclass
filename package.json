@@ -66,6 +66,7 @@
     "eslint-plugin-eslint-comments": "3.1.2",
     "eslint-plugin-flowtype": "4.3.0",
     "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsdoc": "^18.0.1",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-node": "10.0.0",
     "eslint-plugin-prettier": "3.1.1",
@@ -102,6 +103,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
+      "eslint --fix",
       "prettier-standard",
       "git add"
     ]
@@ -126,9 +128,50 @@
   "eslintConfig": {
     "extends": [
       "@eclass"
-    ]
+    ],
+    "rules": {
+      "security/detect-object-injection": 0,
+      "security/detect-non-literal-fs-filename": 0,
+      "security/detect-unsafe-regex": 0,
+      "sonarjs/cognitive-complexity": 0,
+      "sonarjs/no-duplicate-string": 0,
+      "sonarjs/no-duplicated-branches": 0,
+      "sonarjs/max-switch-cases": ["error", 44],
+      "require-jsdoc": 0,
+      "valid-jsdoc": 0,
+      "jsdoc/check-alignment": 0,
+      "jsdoc/check-examples": 0,
+      "jsdoc/check-indentation": 0,
+      "jsdoc/check-param-names": 0,
+      "jsdoc/check-syntax": 0,
+      "jsdoc/check-tag-names": 0,
+      "jsdoc/check-types": 0,
+      "jsdoc/implements-on-classes": 0,
+      "jsdoc/match-description": 0,
+      "jsdoc/newline-after-description": 0,
+      "jsdoc/no-types": 0,
+      "jsdoc/no-undefined-types": 0,
+      "jsdoc/require-description": 0,
+      "jsdoc/require-description-complete-sentence": 0,
+      "jsdoc/require-example": 0,
+      "jsdoc/require-hyphen-before-param-description": 0,
+      "jsdoc/require-jsdoc": 0,
+      "jsdoc/require-param": 0,
+      "jsdoc/require-param-description": 0,
+      "jsdoc/require-param-name": 0,
+      "jsdoc/require-param-type": 0,
+      "jsdoc/require-returns": 0,
+      "jsdoc/require-returns-check": 0,
+      "jsdoc/require-returns-description": 0,
+      "jsdoc/require-returns-type": 0,
+      "jsdoc/valid-types": 0
+    }
   },
-  "eslintIgnore": [],
+  "eslintIgnore": [
+    ".storybook",
+    "storybook-static",
+    "dist"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",

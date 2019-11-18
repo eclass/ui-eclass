@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Wrapper } from './styles'
 import propTypes from 'prop-types'
 
-const Avatar = ({ alt, size, userId, picture, fullName, fontSize }) => {
+export const Avatar = ({ alt, size, userId, picture, fullName, fontSize }) => {
   const [selectedColor, setColor] = useState('#0076ba')
   const [validUrl, setValidUrl] = useState(false)
   useEffect(() => {
@@ -113,7 +113,9 @@ Avatar.propTypes = {
   /**
   Tamaño de la fuente(sugerido)
   */
-  fontSize: propTypes.number
+  fontSize: propTypes.number,
+  url: propTypes.string,
+  fn: propTypes.func
 }
 
 Avatar.defaultProps = {
@@ -122,5 +124,3 @@ Avatar.defaultProps = {
   alt: 'Rounded Image',
   size: 50
 }
-
-export default Avatar

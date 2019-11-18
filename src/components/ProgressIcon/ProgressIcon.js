@@ -46,7 +46,7 @@ ProgressIcon.propTypes = {
   */
   className: PropTypes.string,
   /**
-  String con titulo del icono pueden ser 
+  String con titulo del icono pueden ser
   */
   icon: PropTypes.oneOf(['done', 'in-progress', 'opened', 'blocked'])
     .isRequired,
@@ -65,7 +65,7 @@ ProgressIcon.propTypes = {
   height: PropTypes.string,
   width: PropTypes.string,
   /**
-  Acción al hacer click 
+  Acción al hacer click
   */
   onClick: PropTypes.func
 }

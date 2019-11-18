@@ -5,6 +5,9 @@ import Close from '../src/components/UI/svg/cerrar-definicion.svg'
 
 const GlobalStyle = createGlobalStyle`
 font-family: 'Roboto', sans-serif;
+.token{
+    color: white;
+}
 .tooltip {
     .tooltip-inner{
         font-size: 11px;

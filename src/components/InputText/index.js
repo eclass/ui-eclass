@@ -1,1 +1,2 @@
-export * from './InputText'
+import InputText from './InputText'
+export { InputText }
