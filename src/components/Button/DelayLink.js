@@ -20,6 +20,7 @@ const DelayLink = ({
       e.preventDefault()
       setTimeout(() => {
         if (external) {
+          // eslint-disable-next-line security/detect-non-literal-fs-filename
           window.open(to, '_blank')
         } else {
           history.push(to)
@@ -52,7 +53,11 @@ const DelayLink = ({
 DelayLink.propTypes = {
   className: PropTypes.string,
   delay: PropTypes.number,
-  external: PropTypes.bool
+  external: PropTypes.bool,
+  children: PropTypes.string,
+  to: PropTypes.string,
+  history: PropTypes.string,
+  disabled: PropTypes.bool
 }
 
 export default styled(withRouter(DelayLink))`

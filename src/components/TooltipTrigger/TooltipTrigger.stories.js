@@ -19,12 +19,9 @@ export const hoverAndPosition = () => (
       icon="in-progress"
       id="Tooltip-in-progress"
     />
-    <TooltipTrigger
-      placement="top"
-      trigger="hover"
-      target="in-progress"
-      children="Visto 0 de 4 contenidos"
-    />
+    <TooltipTrigger placement="top" trigger="hover" target="in-progress">
+      {'Visto 0 de 4 contenidos'}
+    </TooltipTrigger>
 
     <ProgressIcon
       color="white"
@@ -32,12 +29,9 @@ export const hoverAndPosition = () => (
       icon="opened"
       id="Tooltip-opened"
     />
-    <TooltipTrigger
-      placement="right"
-      trigger="hover"
-      target="opened"
-      children="Unidad Liberada"
-    />
+    <TooltipTrigger placement="right" trigger="hover" target="opened">
+      {'Unidad Liberada'}
+    </TooltipTrigger>
 
     <ProgressIcon
       color="white"
@@ -45,12 +39,9 @@ export const hoverAndPosition = () => (
       icon="blocked"
       id="Tooltip-blocked"
     />
-    <TooltipTrigger
-      placement="left"
-      trigger="hover"
-      target="blocked"
-      children="Para continuar debes completar la unidad anterior"
-    />
+    <TooltipTrigger placement="left" trigger="hover" target="blocked">
+      {'Para continuar debes completar la unidad anterior'}
+    </TooltipTrigger>
 
     <ProgressIcon
       color="white"
@@ -58,12 +49,9 @@ export const hoverAndPosition = () => (
       icon="done"
       id="Tooltip-done"
     />
-    <TooltipTrigger
-      placement="bottom"
-      trigger="hover"
-      target="done"
-      children="Visto 4 de 4 contenidos"
-    />
+    <TooltipTrigger placement="bottom" trigger="hover" target="done">
+      {'Visto 0 de 4 contenidos'}
+    </TooltipTrigger>
 
     <ProgressIcon
       color="white"
@@ -71,12 +59,9 @@ export const hoverAndPosition = () => (
       icon="blocked"
       id="Tooltip-block-gray"
     />
-    <TooltipTrigger
-      placement="auto"
-      trigger="hover"
-      target="block-gray"
-      children="El examen estará disponible a partir del...."
-    />
+    <TooltipTrigger placement="auto" trigger="hover" target="block-gray">
+      {'El examen estará disponible a partir del....'}
+    </TooltipTrigger>
   </>
 )
 

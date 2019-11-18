@@ -27,7 +27,7 @@ const InputText = ({ disabled, autoFocus, type, placeholder, label }) => {
           '^.+@[^.].*.[a-z]{2,}$',
           value,
           'Debes llenar este campo con email válido'
-        ) //eslint-disable-line
+        )
       case 'alphabetic':
         return validation(
           '^[a-zA-ZñÑáéíóúÁÉÍÓÚ\\s]+$',

@@ -377,12 +377,17 @@ const getPath = (name, props) => {
       return (
         <g {...props} fillRule="nonzero">
           <path d="M5 6H1c-.6 0-1-.4-1-1V1c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v4c0 .6-.4 1-1 1zM8 0h8v2H8zM8 4h8v2H8zM0 8h16v2H0zM0 12h16v2H0z" />{' '}
-          />
+          /&gt;
         </g>
       )
     default:
       return <path />
   }
+}
+
+getPath.propTypes = {
+  fill: PropTypes.string,
+  stroke: PropTypes.string
 }
 
 // @Component
@@ -405,7 +410,9 @@ const Icon = ({
   viewBox,
   testid
 }) => {
+  // eslint-disable-next-line security/detect-object-injection
   if (UIVars.setColors[fill]) {
+    // eslint-disable-next-line security/detect-object-injection
     fill = UIVars.setColors[fill]
   }
 
@@ -444,7 +451,8 @@ Icon.propTypes = {
   height: PropTypes.number,
   width: PropTypes.number,
   viewBox: PropTypes.number,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  testid: PropTypes.string
 }
 
 export { Icon }

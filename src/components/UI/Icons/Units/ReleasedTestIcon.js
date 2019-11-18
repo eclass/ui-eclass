@@ -1,4 +1,5 @@
 import * as React from 'react'
+import PropTypes from 'prop-types'
 
 export const ReleasedTestIcon = ({ gender = 1 }) => {
   return gender === 1 ? (
@@ -247,4 +248,8 @@ export const ReleasedTestIcon = ({ gender = 1 }) => {
       </g>
     </svg>
   )
+}
+
+ReleasedTestIcon.propTypes = {
+  gender: PropTypes.number
 }
