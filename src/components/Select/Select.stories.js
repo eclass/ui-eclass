@@ -7,7 +7,7 @@ export default {
 
   parameters: {
     component: Select,
-    componentSubtitle: 'Selects diseñados para plataforma v8'
+    componentSubtitle: 'Selects con validación al no seleccionar op. válida'
   }
 }
 

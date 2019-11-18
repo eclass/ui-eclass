@@ -77,6 +77,7 @@ const Wrap = ({ color, timeout, under, children, opacity }) => (
 // @Export Component
 const StyledWrap = styled.div`
   height: 100%;
+  overflow: hidden;
   & > div {
     height: 100%;
     position: relative;
@@ -98,6 +99,5 @@ const StyledWrap = styled.div`
   .rtr-root {
     position: relative;
     display: inline-block;
-    overflow: hidden;
   }
 `

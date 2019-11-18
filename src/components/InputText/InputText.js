@@ -110,9 +110,25 @@ const InputText = ({ disabled, autoFocus, type, placeholder, label }) => {
 
 // @Proptypes
 InputText.propTypes = {
+  /**
+  Tipo de validación
+  */
+  type: PropTypes.oneOf(['phone', 'email', 'alphabetic']),
+  /**
+  Si está deshabilitado
+  */
   disabled: PropTypes.bool,
+  /**
+  Autofocus al input
+  */
   autoFocus: PropTypes.bool,
+  /**
+  Placeholder del input
+  */
   placeholder: PropTypes.string,
+  /**
+  Etiqueta sobre el input
+  */
   label: PropTypes.string
 }
 
