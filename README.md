@@ -53,7 +53,7 @@ Abrir http://localhost:9009
 
 `yarn test`
 
-##Estructura de componentes
+## Estructura de componentes
 
 ```
 └──  ui-eclass
@@ -67,11 +67,11 @@ Abrir http://localhost:9009
     │   │   │  ├── Button.js
     │   │   │  ├── Button.stories.js
 ```
-##Creación de documentación 
+ 
 
-###PropTypes
+## Proptypes
 
-Para reflejar los proptypes en la documentación
+Deben detallarse los proptypes para reflejarlo en la vista de documentación
 
 ### Uso de Ramas
 - `master`: código en el ambiente de producción. Todo código que esté acá está publicado y funcional. Además de validado por los `test`. 
