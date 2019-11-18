@@ -1,5 +1,5 @@
 import React from 'react'
-import Avatar from './Avatar'
+import { Avatar } from './Avatar'
 import flor from '../UI/images/flor-de-margarita-830x551.jpg'
 import person2 from '../UI/images/263385.jpeg'
 import person1 from '../UI/images/132554.jpeg'

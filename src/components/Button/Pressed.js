@@ -78,8 +78,8 @@ const Wrap = ({ color, timeout, under, children, opacity }) => (
 Wrap.propTypes = {
   color: PropTypes.string,
   timeout: PropTypes.number,
-  under: PropTypes.string,
-  children: PropTypes.string,
+  under: PropTypes.bool,
+  children: PropTypes.node,
   opacity: PropTypes.number
 }
 
