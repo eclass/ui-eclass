@@ -131,9 +131,9 @@
       "plugin:react/recommended"
     ],
     "settings": {
-      "react" : {
+      "react": {
         "version": "detect"
-      } 
+      }
     },
     "rules": {
       "security/detect-object-injection": 0,

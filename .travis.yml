@@ -12,6 +12,9 @@ stages:
     if: branch = master
 jobs:
   include:
+    - stage: dist
+      name: build dist
+      script: yarn build
     - stage: lint
       name: eslint
       script: npx eslint .
