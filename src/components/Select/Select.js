@@ -88,7 +88,7 @@ Select.propTypes = {
   /**
   Placeholder de select
   */
-  placeholder: PropTypes.string,
+  placeholder: PropTypes.string.isRequired,
   /**
   Etiqueta de select
   */
