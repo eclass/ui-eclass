@@ -60,12 +60,12 @@ const Select = ({ disabled, label, placeholder, data }) => {
         <option value="Selecciona">{placeholder}</option>
         {data
           ? data.map((region, key) => {
-              return (
-                <option value={region.region} key={key}>
-                  {region.region}
-                </option>
-              )
-            })
+            return (
+              <option value={region.region} key={key}>
+                {region.region}
+              </option>
+            )
+          })
           : null}
       </Input>
       {icon}
@@ -88,7 +88,7 @@ Select.propTypes = {
   /**
   Placeholder de select
   */
-  placeholder: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
   /**
   Etiqueta de select
   */
