@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/eclass/ui-eclass/compare/v1.0.0...v1.0.1) (2019-11-19)
+
+
+### Bug Fixes
+
+* **travis:** update travis and index ([9310688](https://github.com/eclass/ui-eclass/commit/9310688793fc605968800e95c0680d2200357c08))
+
 # 1.0.0 (2019-11-19)
 
 
