@@ -12,9 +12,6 @@ stages:
     if: branch = master
 jobs:
   include:
-    - stage: dist
-      name: build dist
-      script: yarn build
     - stage: lint
       name: eslint
       script: npx eslint .
@@ -25,3 +22,5 @@ jobs:
       script: commitlint-travis
     - stage: deploy
       script: npx semantic-release
+      after_success:
+        - yarn build
