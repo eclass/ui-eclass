@@ -127,8 +127,14 @@
   },
   "eslintConfig": {
     "extends": [
-      "@eclass"
+      "@eclass",
+      "plugin:react/recommended"
     ],
+    "settings": {
+      "react" : {
+        "version": "detect"
+      } 
+    },
     "rules": {
       "security/detect-object-injection": 0,
       "security/detect-non-literal-fs-filename": 0,
