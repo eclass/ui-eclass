@@ -1,5 +1,5 @@
 {
-  "name": "react-ui-eclass-v8",
+  "name": "ui-eclass-v8",
   "version": "0.1.0",
   "description": "Componentes UI de eClass",
   "license": "MIT",
@@ -136,7 +136,10 @@
       "sonarjs/cognitive-complexity": 0,
       "sonarjs/no-duplicate-string": 0,
       "sonarjs/no-duplicated-branches": 0,
-      "sonarjs/max-switch-cases": ["error", 44],
+      "sonarjs/max-switch-cases": [
+        "error",
+        44
+      ],
       "require-jsdoc": 0,
       "valid-jsdoc": 0,
       "jsdoc/check-alignment": 0,
