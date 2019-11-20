@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/eclass/ui-eclass/compare/v1.0.1...v1.0.2) (2019-11-20)
+
+
+### Bug Fixes
+
+* **select:** indentation ([25c9916](https://github.com/eclass/ui-eclass/commit/25c99164998957dfc20f89a146eba1adb2b0c168))
+
 # v0.1.0 (2019-11-19)
 
 - Created first version of the design system, with `Avatar`, `Button`, `InputText`, `Select`, `ProgressIcon` and `Tooltiptrigger` components.
