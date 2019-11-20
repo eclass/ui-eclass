@@ -25,4 +25,4 @@ jobs:
     - stage: build
       name: building
       script: yarn build 
-    - run: yarn build-storybook 
+    - run: yarn build-storybook --passWithNoTests
