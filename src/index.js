@@ -1,8 +1,6 @@
-import Avatar from './components/Avatar/'
-import Button from './components/Button'
-import InputText from './components/InputText'
-import ProgressIcon from './components/ProgressIcon'
-import Select from './components/Select'
-import TooltipTrigger from './components/TooltipTrigger'
-
-export { Avatar, Button, InputText, ProgressIcon, TooltipTrigger, Select }
+export * from './components/Avatar/'
+export * from './components/Button'
+export * from './components/InputText'
+export * from './components/ProgressIcon'
+export * from './components/Select'
+export * from './components/TooltipTrigger'

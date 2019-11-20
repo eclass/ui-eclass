@@ -5,7 +5,7 @@ import { Icon } from '../UI/Icons'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 
-const Select = ({ disabled, label, placeholder, data }) => {
+export const Select = ({ disabled, label, placeholder, data }) => {
   const [icon, setIcon] = useState(null)
   const [borderValid, setBorderValid] = useState(false)
   const [borderInvalid, setBorderInvalid] = useState(false)
@@ -60,20 +60,18 @@ const Select = ({ disabled, label, placeholder, data }) => {
         <option value="Selecciona">{placeholder}</option>
         {data
           ? data.map((region, key) => {
-            return (
-              <option value={region.region} key={key}>
-                {region.region}
-              </option>
-            )
-          })
+              return (
+                <option value={region.region} key={key}>
+                  {region.region}
+                </option>
+              )
+            })
           : null}
       </Input>
       {icon}
     </Wrapper>
   )
 }
-
-export default Select
 
 // @Proptypes
 Select.propTypes = {

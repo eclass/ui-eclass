@@ -3,7 +3,7 @@ import { Wrapper } from './styles'
 import PropTypes from 'prop-types'
 import Tooltip from 'reactstrap/lib/Tooltip'
 
-const TooltipTrigger = ({
+export const TooltipTrigger = ({
   target,
   children,
   className,
@@ -59,6 +59,3 @@ TooltipTrigger.defaultProps = {
   placement: 'top',
   trigger: 'click'
 }
-
-// @Export Component
-export default TooltipTrigger

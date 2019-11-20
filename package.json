@@ -92,7 +92,7 @@
     "semantic-release": "15.13.24",
     "storybook-readme": "5.0.8"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@testing-library/jest-dom": "4.1.2",
     "@testing-library/react": "9.3.0",
     "availity-reactstrap-validation": "2.6.0",

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Wrapper from './styles'
 import { Icon } from '../UI/Icons'
 
-const ProgressIcon = ({
+export const ProgressIcon = ({
   id,
   className,
   icon,
@@ -24,8 +24,6 @@ const ProgressIcon = ({
     <Icon name={icon} fill={color} width={width} height={height} />
   </Wrapper>
 )
-
-export default ProgressIcon
 
 // @Default Proptypes
 ProgressIcon.defaultProps = {

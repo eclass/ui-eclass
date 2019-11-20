@@ -7,7 +7,7 @@ import { darken, transparentize } from 'polished'
 import Tooltip from 'reactstrap/lib/Tooltip'
 import PropTypes from 'prop-types'
 
-export default function Button ({
+export function Button ({
   id,
   border,
   disabled,

@@ -5,7 +5,13 @@ import { Icon } from '../UI/Icons'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 
-const InputText = ({ disabled, autoFocus, type, placeholder, label }) => {
+export const InputText = ({
+  disabled,
+  autoFocus,
+  type,
+  placeholder,
+  label
+}) => {
   const [valueInput, setValueInput] = useState('')
   const [icon, setIcon] = useState(null)
   const [borderValid, setBorderValid] = useState(false)
@@ -138,5 +144,3 @@ InputText.defaultProps = {
   placeholder: 'Placeholder',
   label: 'Etiqueta'
 }
-
-export default InputText
