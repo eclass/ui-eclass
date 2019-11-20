@@ -22,5 +22,7 @@ jobs:
       script: commitlint-travis
     - stage: deploy
       script: npx semantic-release
-      after_success:
-        - yarn build
+    - stage: build
+      name: building
+      script: yarn build 
+    - run: yarn build-storybook 

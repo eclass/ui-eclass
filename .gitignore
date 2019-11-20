@@ -10,10 +10,10 @@
 
 # production
 /build
+.env
 
 # Static files of Storybook
 storybook-static/
-dist
 
 # misc
 .DS_Store
