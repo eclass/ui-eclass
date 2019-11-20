@@ -1,7 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import variables from '../src/components/variables'
-import Close from '../src/components/UI/svg/cerrar-definicion.svg'
-
 
 const GlobalStyle = createGlobalStyle`
 font-family: 'Roboto', sans-serif;

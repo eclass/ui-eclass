@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import variables from '../variables'
-import { stre } from '../UI/svg'
 
 const Wrapper = styled.div`
   height: 97px;
@@ -23,7 +22,6 @@ const Wrapper = styled.div`
 
   select.form-control {
     font-family: 'Roboto', sans-serif;
-    background-image: url(${stre});
     background-repeat: no-repeat;
     background-position: 370px;
     -moz-appearance: none;
