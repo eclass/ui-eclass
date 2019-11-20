@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/eclass/ui-eclass/compare/v1.0.4...v1.0.5) (2019-11-20)
+
+
+### Bug Fixes
+
+* **svg:** delete svg and routes ([e78e64c](https://github.com/eclass/ui-eclass/commit/e78e64ca23cc0776c383184d03cbc0cabf59cc91))
+
 ## [1.0.4](https://github.com/eclass/ui-eclass/compare/v1.0.3...v1.0.4) (2019-11-20)
 
 
