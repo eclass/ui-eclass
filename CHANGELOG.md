@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/eclass/ui-eclass/compare/v1.0.3...v1.0.4) (2019-11-20)
+
+
+### Bug Fixes
+
+* **svg:** delete svgs ([d0d2f59](https://github.com/eclass/ui-eclass/commit/d0d2f591ba22f3086e51ee5262f7bc14e4867296))
+
 ## [1.0.3](https://github.com/eclass/ui-eclass/compare/v1.0.2...v1.0.3) (2019-11-20)
 
 
