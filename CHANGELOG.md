@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/eclass/ui-eclass/compare/v1.0.2...v1.0.3) (2019-11-20)
+
+
+### Bug Fixes
+
+* **test:** remove app test ([72e174d](https://github.com/eclass/ui-eclass/commit/72e174dbe31dfd79b63dc1572263a404d1cfd14b))
+
 ## [1.0.2](https://github.com/eclass/ui-eclass/compare/v1.0.1...v1.0.2) (2019-11-20)
 
 
