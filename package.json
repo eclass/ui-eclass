@@ -31,7 +31,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "BABEL_ENV=production babel src -d dist",
-    "test": "react-scripts test",
+    "test": "react-scripts test --passWithNoTests",
     "develop": "start-storybook -p 9009 -s public",
     "storybook": "build-storybook -c .storybook",
     "build-storybook": "build-storybook -s public",
