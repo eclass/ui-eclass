@@ -1,3 +1,13 @@
+## [1.0.6](https://github.com/eclass/ui-eclass/compare/v1.0.5...v1.0.6) (2019-11-21)
+
+
+### Bug Fixes
+
+* **components:** resolve import problems ([be6d1c4](https://github.com/eclass/ui-eclass/commit/be6d1c48049cd88be38345e3d6bff5b1c1021597))
+* **entrypoint:** change export entrypoint ([87c4f94](https://github.com/eclass/ui-eclass/commit/87c4f9408144eff4503c938981160e5217175340))
+* **indentation:** indentation select ([f189580](https://github.com/eclass/ui-eclass/commit/f189580df84c785b5656a6b10fa4df9eee129377))
+* **indentation:** indentation select ([c31c871](https://github.com/eclass/ui-eclass/commit/c31c87151e70445c7481a851e2bad988e084085d))
+
 ## [1.0.5](https://github.com/eclass/ui-eclass/compare/v1.0.4...v1.0.5) (2019-11-20)
 
 
