@@ -9,19 +9,19 @@ exports.validationAlphabetic = exports.validationEmail = exports.validationPhone
 
 var _react = _interopRequireDefault(require("react"));
 
-var _InputText = _interopRequireDefault(require("./InputText"));
+var _InputText = require("./InputText");
 
 var _default = {
   title: 'Plataforma v8|Input',
   parameters: {
-    component: _InputText.default,
+    component: _InputText.InputText,
     componentSubtitle: 'Input con validaciones según tipo'
   }
 };
 exports.default = _default;
 
 var input = function input() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_InputText.default, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_InputText.InputText, {
     placeholder: "Escribe algo...",
     label: "Estandar"
   }));
@@ -30,7 +30,7 @@ var input = function input() {
 exports.input = input;
 
 var autofocus = function autofocus() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_InputText.default, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_InputText.InputText, {
     placeholder: "Escribe algo...",
     autoFocus: true,
     label: "Autofocus"
@@ -40,7 +40,7 @@ var autofocus = function autofocus() {
 exports.autofocus = autofocus;
 
 var disabled = function disabled() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_InputText.default, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_InputText.InputText, {
     placeholder: "Placeholder",
     label: "Disabled",
     disabled: true
@@ -50,7 +50,7 @@ var disabled = function disabled() {
 exports.disabled = disabled;
 
 var validationPhone = function validationPhone() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_InputText.default, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_InputText.InputText, {
     placeholder: "Ingresa un n\xFAmero de tel\xE9fono",
     label: "N\xFAmero de tel\xE9fono",
     type: "phone"
@@ -60,7 +60,7 @@ var validationPhone = function validationPhone() {
 exports.validationPhone = validationPhone;
 
 var validationEmail = function validationEmail() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_InputText.default, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_InputText.InputText, {
     placeholder: "Correo electr\xF3nico",
     label: "Correo electr\xF3nico",
     type: "email"
@@ -70,7 +70,7 @@ var validationEmail = function validationEmail() {
 exports.validationEmail = validationEmail;
 
 var validationAlphabetic = function validationAlphabetic() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_InputText.default, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_InputText.InputText, {
     placeholder: "Ingresa tu nombre",
     label: "Nombre",
     type: "alphabetic"

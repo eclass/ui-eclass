@@ -1,17 +1,15 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/josefin/Documents/ui-eclass/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 var _interopRequireWildcard = require("/Users/josefin/Documents/ui-eclass/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireWildcard");
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.ProgressIcon = void 0;
 
 var React = _interopRequireWildcard(require("react"));
 
-var _styles = _interopRequireDefault(require("./styles"));
+var _styles = require("./styles");
 
 var _Icons = require("../UI/Icons");
 
@@ -26,7 +24,7 @@ var ProgressIcon = function ProgressIcon(_ref) {
       width = _ref.width,
       height = _ref.height,
       onClick = _ref.onClick;
-  return React.createElement(_styles.default, {
+  return React.createElement(_styles.Wrapper, {
     className: "".concat(className),
     id: id,
     bgcolor: bgcolor,
@@ -38,11 +36,10 @@ var ProgressIcon = function ProgressIcon(_ref) {
     width: width,
     height: height
   }));
-};
+}; // @Default Proptypes
 
-var _default = ProgressIcon; // @Default Proptypes
 
-exports.default = _default;
+exports.ProgressIcon = ProgressIcon;
 ProgressIcon.defaultProps = {
   icon: 'done',
   color: 'white',

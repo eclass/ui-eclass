@@ -11,27 +11,27 @@ var _react = _interopRequireDefault(require("react"));
 
 var _addonActions = require("@storybook/addon-actions");
 
-var _Button = _interopRequireDefault(require("./Button"));
+var _Button = require("./Button");
 
 var _default = {
   title: 'Plataforma v8|Button',
   parameters: {
-    component: _Button.default,
-    componentSubtitle: 'Displays an image that represents a user or organization'
+    component: _Button.Button,
+    componentSubtitle: 'Botones con diferentes estados y customizables'
   }
 };
 exports.default = _default;
 
 var buttons = function buttons() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Button.default, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Button.Button, {
     state: "primary",
     text: 'Button Primary',
     onClick: (0, _addonActions.action)('click')
-  }), _react.default.createElement(_Button.default, {
+  }), _react.default.createElement(_Button.Button, {
     text: 'Button Ghost',
     ghost: true,
     onClick: (0, _addonActions.action)('click')
-  }), _react.default.createElement(_Button.default, {
+  }), _react.default.createElement(_Button.Button, {
     state: "info",
     text: 'Disabled',
     disabled: true,
@@ -42,13 +42,13 @@ var buttons = function buttons() {
 exports.buttons = buttons;
 
 var states = function states() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Button.default, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Button.Button, {
     state: "primary",
     text: 'Button Blue'
-  }), _react.default.createElement(_Button.default, {
+  }), _react.default.createElement(_Button.Button, {
     text: 'Button Ghost',
     ghost: true
-  }), _react.default.createElement(_Button.default, {
+  }), _react.default.createElement(_Button.Button, {
     state: "info",
     text: 'Disabled',
     disabled: true
@@ -58,14 +58,14 @@ var states = function states() {
 exports.states = states;
 
 var OtherStates = function OtherStates() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Button.default, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Button.Button, {
     state: "info",
     text: 'Button',
     opacityPressed: 0
-  }), _react.default.createElement(_Button.default, {
+  }), _react.default.createElement(_Button.Button, {
     state: "danger",
     text: 'Button'
-  }), _react.default.createElement(_Button.default, {
+  }), _react.default.createElement(_Button.Button, {
     state: "warning",
     text: 'Disabled'
   }));
@@ -74,7 +74,7 @@ var OtherStates = function OtherStates() {
 exports.OtherStates = OtherStates;
 
 var xs = function xs() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Button.default, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Button.Button, {
     state: "primary",
     size: 'xs',
     text: 'Disabled'

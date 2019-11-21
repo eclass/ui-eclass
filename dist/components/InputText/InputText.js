@@ -7,7 +7,7 @@ var _interopRequireDefault = require("/Users/josefin/Documents/ui-eclass/node_mo
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.InputText = void 0;
 
 var _slicedToArray2 = _interopRequireDefault(require("/Users/josefin/Documents/ui-eclass/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/slicedToArray"));
 
@@ -135,11 +135,10 @@ var InputText = function InputText(_ref) {
 }; // @Proptypes
 
 
+exports.InputText = InputText;
 InputText.defaultProps = {
   disabled: false,
   autoFocus: false,
   placeholder: 'Placeholder',
   label: 'Etiqueta'
 };
-var _default = InputText;
-exports.default = _default;

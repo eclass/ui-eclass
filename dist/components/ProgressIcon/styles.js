@@ -5,7 +5,7 @@ var _interopRequireDefault = require("/Users/josefin/Documents/ui-eclass/node_mo
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.Wrapper = void 0;
 
 var _taggedTemplateLiteral2 = _interopRequireDefault(require("/Users/josefin/Documents/ui-eclass/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral"));
 
@@ -36,5 +36,4 @@ var Wrapper = _styledComponents.default.div(_templateObject(), function (_ref) {
   return size || '27px';
 });
 
-var _default = Wrapper;
-exports.default = _default;
+exports.Wrapper = Wrapper;

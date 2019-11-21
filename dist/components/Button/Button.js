@@ -5,7 +5,7 @@ var _interopRequireDefault = require("/Users/josefin/Documents/ui-eclass/node_mo
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = Button;
+exports.Button = Button;
 exports.isDisabled = exports.buttonBorder = exports.buttonActionColor = exports.buttonSize = exports.buttonState = exports.buttonBackground = exports.buttonColor = void 0;
 
 var _react = _interopRequireDefault(require("react"));

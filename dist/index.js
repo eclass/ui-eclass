@@ -1,55 +1,77 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/josefin/Documents/ui-eclass/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "Avatar", {
-  enumerable: true,
-  get: function get() {
-    return _Avatar.default;
-  }
-});
-Object.defineProperty(exports, "Button", {
-  enumerable: true,
-  get: function get() {
-    return _Button.default;
-  }
-});
-Object.defineProperty(exports, "InputText", {
-  enumerable: true,
-  get: function get() {
-    return _InputText.default;
-  }
-});
-Object.defineProperty(exports, "ProgressIcon", {
-  enumerable: true,
-  get: function get() {
-    return _ProgressIcon.default;
-  }
-});
-Object.defineProperty(exports, "Select", {
-  enumerable: true,
-  get: function get() {
-    return _Select.default;
-  }
-});
-Object.defineProperty(exports, "TooltipTrigger", {
-  enumerable: true,
-  get: function get() {
-    return _TooltipTrigger.default;
-  }
+
+var _Avatar = require("./components/Avatar/");
+
+Object.keys(_Avatar).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _Avatar[key];
+    }
+  });
 });
 
-var _Avatar = _interopRequireDefault(require("./components/Avatar/"));
+var _Button = require("./components/Button");
 
-var _Button = _interopRequireDefault(require("./components/Button"));
+Object.keys(_Button).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _Button[key];
+    }
+  });
+});
 
-var _InputText = _interopRequireDefault(require("./components/InputText"));
+var _InputText = require("./components/InputText");
 
-var _ProgressIcon = _interopRequireDefault(require("./components/ProgressIcon"));
+Object.keys(_InputText).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _InputText[key];
+    }
+  });
+});
 
-var _Select = _interopRequireDefault(require("./components/Select"));
+var _ProgressIcon = require("./components/ProgressIcon");
 
-var _TooltipTrigger = _interopRequireDefault(require("./components/TooltipTrigger"));
+Object.keys(_ProgressIcon).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _ProgressIcon[key];
+    }
+  });
+});
+
+var _Select = require("./components/Select");
+
+Object.keys(_Select).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _Select[key];
+    }
+  });
+});
+
+var _TooltipTrigger = require("./components/TooltipTrigger");
+
+Object.keys(_TooltipTrigger).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _TooltipTrigger[key];
+    }
+  });
+});

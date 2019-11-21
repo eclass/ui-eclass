@@ -7,7 +7,7 @@ var _interopRequireDefault = require("/Users/josefin/Documents/ui-eclass/node_mo
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.Select = void 0;
 
 var _slicedToArray2 = _interopRequireDefault(require("/Users/josefin/Documents/ui-eclass/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/slicedToArray"));
 
@@ -97,11 +97,10 @@ var Select = function Select(_ref) {
       key: key
     }, region.region);
   }) : null), icon);
-};
+}; // @Proptypes
 
-var _default = Select; // @Proptypes
 
-exports.default = _default;
+exports.Select = Select;
 Select.defaultProps = {
   disabled: false,
   data: null,

@@ -7,7 +7,7 @@ var _interopRequireDefault = require("/Users/josefin/Documents/ui-eclass/node_mo
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.TooltipTrigger = void 0;
 
 var _slicedToArray2 = _interopRequireDefault(require("/Users/josefin/Documents/ui-eclass/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/slicedToArray"));
 
@@ -44,12 +44,10 @@ var TooltipTrigger = function TooltipTrigger(_ref) {
 }; // @Proptypes
 
 
+exports.TooltipTrigger = TooltipTrigger;
 TooltipTrigger.defaultProps = {
   target: 0,
   children: 'Tooltip',
   placement: 'top',
   trigger: 'click'
-}; // @Export Component
-
-var _default = TooltipTrigger;
-exports.default = _default;
+};
