@@ -16,4 +16,4 @@ const Wrapper = styled.div`
     align-self: center;
   }
 `
-export default Wrapper
+export { Wrapper }

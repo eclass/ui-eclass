@@ -1,6 +1,6 @@
 import React from 'react'
-import TooltipTrigger from './TooltipTrigger'
-import ProgressIcon from '../ProgressIcon/ProgressIcon'
+import { TooltipTrigger } from './TooltipTrigger'
+import { ProgressIcon } from '../ProgressIcon'
 import variables from '../variables'
 
 export default {
@@ -8,9 +8,10 @@ export default {
 
   parameters: {
     component: TooltipTrigger,
-    componentSubtitle: 'TooltipTrigger diseñados para plataforma v8'
+    componentSubtitle: 'Tooltips con trigger a diferentes acciones'
   }
 }
+
 export const hoverAndPosition = () => (
   <>
     <ProgressIcon

@@ -1,5 +1,5 @@
 import React from 'react'
-import InputText from './InputText'
+import { InputText } from './InputText'
 
 export default {
   title: 'Plataforma v8|Input',

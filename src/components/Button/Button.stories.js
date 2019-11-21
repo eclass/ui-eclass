@@ -1,13 +1,12 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
-import Button from './Button'
+import { Button } from './Button'
 
 export default {
   title: 'Plataforma v8|Button',
   parameters: {
     component: Button,
-    componentSubtitle:
-      'Displays an image that represents a user or organization'
+    componentSubtitle: 'Botones con diferentes estados y customizables'
   }
 }
 

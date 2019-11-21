@@ -1,2 +1,2 @@
-import TooltipTrigger from './TooltipTrigger'
+import { TooltipTrigger } from './TooltipTrigger'
 export { TooltipTrigger }

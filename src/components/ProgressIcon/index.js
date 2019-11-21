@@ -1,2 +1,2 @@
-import ProgressIcon from './ProgressIcon'
+import { ProgressIcon } from './ProgressIcon'
 export { ProgressIcon }

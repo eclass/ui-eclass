@@ -1,7 +1,7 @@
 // @External Dependencies
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import Wrapper from './styles'
+import { Wrapper } from './styles'
 import { Icon } from '../UI/Icons'
 
 export const ProgressIcon = ({

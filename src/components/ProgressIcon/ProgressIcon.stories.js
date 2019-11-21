@@ -1,5 +1,5 @@
 import React from 'react'
-import ProgressIcon from './ProgressIcon'
+import { ProgressIcon } from './ProgressIcon'
 import variables from '../variables'
 
 export default {
