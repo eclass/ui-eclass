@@ -94,7 +94,7 @@
   },
   "peerDependencies": {
     "@testing-library/jest-dom": "4.1.2",
-    "@testing-library/react": "9.3.0",
+    "@testing-library/react": "9.5.0",
     "availity-reactstrap-validation": "2.6.0",
     "bootstrap": "4.3.1",
     "classnames": "2.2.6",
