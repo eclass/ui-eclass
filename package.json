@@ -89,7 +89,7 @@
     "lint-staged": "9.4.3",
     "prettier": "1.18.2",
     "prettier-standard": "15.0.1",
-    "semantic-release": "15.13.24",
+    "semantic-release": "17.2.3",
     "storybook-readme": "5.0.8"
   },
   "peerDependencies": {
